@@ -102,7 +102,7 @@ def render_sidebar_data_notice():
 # CONFIG
 # ------------------------
 APP_DIR = Path(__file__).parent
-AREAS_DIR = APP_DIR / "areas"
+AREAS_DIR = APP_DIR
 
 # Sidebar labels (kept as before)
 AREAS = {
