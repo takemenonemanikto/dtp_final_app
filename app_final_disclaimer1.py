@@ -1,4 +1,3 @@
-
 import json
 import io
 import csv
@@ -15,6 +14,9 @@ from reportlab.lib.units import cm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
 
 import pandas as pd
+
+import io
+import zipfile
 st.set_page_config(page_title="AlfaLabs DTP", layout="wide")
 
 # ------------------------
@@ -979,7 +981,48 @@ def make_areas_state_json_safe(areas_state: dict) -> dict:
         safe_state[area_code] = safe_area
 
     return safe_state
+def build_zip_export(areas_state: dict) -> bytes:
+    """
+    Creates a ZIP export containing:
+    - snapshot.json (JSON-safe)
+    - all uploaded evidence files
+    """
 
+    buffer = io.BytesIO()
+
+    with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as zf:
+
+        # --- 1. Add JSON snapshot ---
+        safe_state = make_areas_state_json_safe(areas_state)
+
+        payload = {
+            "timestamp": datetime.now().isoformat(timespec="seconds"),
+            "areas_state": safe_state,
+        }
+
+        zf.writestr(
+            "snapshot.json",
+            json.dumps(payload, ensure_ascii=False, indent=2)
+        )
+
+        # --- 2. Add evidence files ---
+        for area_code, area_data in (areas_state or {}).items():
+            evidence_files = area_data.get("evidence_files", {})
+
+            for item_key, files in evidence_files.items():
+                for file_item in files or []:
+
+                    # support both formats: (name, bytes) OR just "name"
+                    if isinstance(file_item, (list, tuple)) and len(file_item) >= 2:
+                        name, content = file_item
+
+                        if content:  # only if we have bytes
+                            file_name = f"evidence/{area_code}_{item_key}_{name}"
+                            zf.writestr(file_name, content)
+
+        # finish writing
+    buffer.seek(0)
+    return buffer.getvalue()
 def render_summary():
     st.title("Summary")
     st.caption("High-level, cross-area overview based on the areas you have filled so far.")
@@ -1345,6 +1388,7 @@ def render_summary():
     # ------------------------
     # Save / Load (versioned JSON)
     # ------------------------
+    st.subheader("Save or Load Assesment")
     with st.expander("Save / Load assessment", expanded=False):
         current_state = st.session_state.get("areas_state", {})
         safe_state = make_areas_state_json_safe(current_state)
@@ -1358,22 +1402,36 @@ def render_summary():
             },
             "areas_state": safe_state,
         }
-        st.caption("Note: This JSON snapshot saves text inputs and assessment selections only. Uploaded evidence files are not included.")
+        st.subheader("Partial Export")
+        st.caption("Note: This JSON snapshot saves text inputs and assessment selections only. Uploaded evidence files will not be included.")
 
         st.download_button(
-            "Download assessment (JSON)",
+            "Download partial assessment (JSON)",
             data=json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8"),
             file_name="dtp_assessment_state.json",
             mime="application/json",
         )
+        st.markdown("---")
+        st.subheader("Full Export")
 
-        st.markdown("")
+        st.caption("Includes snapshot.json and all uploaded evidence files.")
+
+        zip_bytes = build_zip_export(st.session_state.get("areas_state", {}))
+
+        st.download_button(
+            label="Download full export (.zip)",
+            data=zip_bytes,
+            file_name="alfalabs_export.zip",
+            mime="application/zip",
+        )
+
+        st.markdown("---")
 
         if "assessment_uploader_nonce" not in st.session_state:
             st.session_state["assessment_uploader_nonce"] = 0
         uploader_key = f"assessment_state_uploader_{st.session_state['assessment_uploader_nonce']}"
-
-        uploaded = st.file_uploader("Upload assessment JSON to restore", type=["json"], key=uploader_key)
+        st.subheader("Upload assessment to continue your work")
+        uploaded = st.file_uploader("Upload assessment in JSON to restore. Do not try to upload the .zip file, evidence files cannot be included here.", type=["json"], key=uploader_key)
 
         col_load_1, col_load_2 = st.columns([1, 2])
         with col_load_1:
