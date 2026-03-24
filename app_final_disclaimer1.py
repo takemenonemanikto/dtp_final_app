@@ -102,7 +102,10 @@ def render_sidebar_data_notice():
 # CONFIG
 # ------------------------
 APP_DIR = Path(__file__).parent
-AREAS_DIR = APP_DIR
+if (APP_DIR / "areas").exists():
+    AREAS_DIR = APP_DIR / "areas"
+else:
+    AREAS_DIR = APP_DIR
 
 # Sidebar labels (kept as before)
 AREAS = {
@@ -399,10 +402,13 @@ def render_area_from_json(area_code: str):
             disabled=LOCKED,
         )
         if up is not None:
+            area_state.setdefault("evidence_files", {})
+            area_state["evidence_files"].setdefault(item_key, [])
             area_state["evidence_files"][item_key].append((up.name, up.read()))
-        if area_state["evidence_files"][item_key]:
-            c5.caption(", ".join([n for (n, _) in area_state["evidence_files"][item_key]]))
 
+        files_for_item = area_state.get("evidence_files", {}).get(item_key, [])
+        if files_for_item:
+            c5.caption(", ".join([n for (n, _) in files_for_item]))
     # ------------------------
     # Score + level
     # ------------------------
@@ -711,12 +717,13 @@ def render_area_from_json(area_code: str):
         "kpi_current": area_state["kpi_current"],
         "evidence_files_names": {k: [n for (n, _) in v] for k, v in area_state["evidence_files"].items()},
     }
-    st.download_button(
-        "Download snapshot (JSON)",
-        data=json.dumps(snapshot, indent=2, ensure_ascii=False).encode("utf-8"),
-        file_name=f"{area_code}_snapshot.json",
-        mime="application/json",
-    )
+    #st.download_button(
+     #   "Download snapshot (JSON)",
+      #  data=json.dumps(snapshot, indent=2, ensure_ascii=False).encode("utf-8"),
+       # file_name=f"{area_code}_snapshot.json",
+        #mime="application/json",
+    #)
+    #st.caption("Note: The downloaded snapshot includes assessment responses, notes, and selected values, but does not include uploaded files. If needed, please store evidence files separately.")
 
 
 # ------------------------
@@ -951,6 +958,27 @@ def generate_pdf_report(summary_df, areas_state, configs, blockers_only, all_cri
     doc.build(elements)
     return buf.getvalue()
 
+def make_areas_state_json_safe(areas_state: dict) -> dict:
+    """
+    Create a JSON-safe copy of the assessment state.
+    Uploaded files are excluded from the exported snapshot.
+    """
+    safe_state = {}
+
+    for area_code, area_data in (areas_state or {}).items():
+        if not isinstance(area_data, dict):
+            safe_state[area_code] = area_data
+            continue
+
+        safe_area = dict(area_data)
+
+        # Remove uploaded files from export entirely
+        if "evidence_files" in safe_area:
+            safe_area["evidence_files"] = {}
+
+        safe_state[area_code] = safe_area
+
+    return safe_state
 
 def render_summary():
     st.title("Summary")
@@ -1319,6 +1347,7 @@ def render_summary():
     # ------------------------
     with st.expander("Save / Load assessment", expanded=False):
         current_state = st.session_state.get("areas_state", {})
+        safe_state = make_areas_state_json_safe(current_state)
 
         payload = {
             "_meta": {
@@ -1327,8 +1356,9 @@ def render_summary():
                 "timestamp": datetime.now().isoformat(timespec="seconds"),
                 **meta,
             },
-            "areas_state": current_state,
+            "areas_state": safe_state,
         }
+        st.caption("Note: This JSON snapshot saves text inputs and assessment selections only. Uploaded evidence files are not included.")
 
         st.download_button(
             "Download assessment (JSON)",
