@@ -1,0 +1,436 @@
+{
+  "area_id": "3.6",
+  "area_name": "Collaboration and Networking",
+  "intro": "3.6 Collaboration and Networking",
+  "overview": "The collaboration and networking area covers how institutions form partnerships and alliances to support digitalisation and AI adoption. It includes structured cooperation with other universities, engagement with industry and public bodies, and participation in European and international consortia. Effective networking provides access to shared resources, joint curricula, and professional development opportunities, while also ensuring that new technologies are integrated inclusively across sectors. Collaboration is both a strategic tool and a cultural practice, reducing duplication and embedding innovation within a broader ecosystem.",
+  "instructions": {
+    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical need to be implemented before approaching to higher maturity level (necessary/minimum conditions)."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Existence of formal partnerships with HEIs on digitalisation and AI",
+        "score_anchors": {
+          "0": "No formal partnerships exist.",
+          "1": "Some partnerships exist but are informal or limited in scope.",
+          "2": "Multiple formal partnerships with clear agreements and active collaboration."
+        },
+        "evidence_examples": "Signed MoUs, partnership agreements, records of joint activities",
+        "owners": "International Relations Office",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Participation in national or EU- level digitalisation and AI networks",
+        "score_anchors": {
+          "0": "No participation.",
+          "1": "Occasional or ad hoc participation.",
+          "2": "Regular, structured participation with defined roles."
+        },
+        "evidence_examples": "Membership lists, meeting minutes, network communicati ons",
+        "owners": "Vice-Rector for Research and Innovation",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 6"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Structured engagement with industry and community partners",
+        "score_anchors": {
+          "0": "No structured engagement.",
+          "1": "Some engagement, but not systematic.",
+          "2": "Ongoing, structured engagement with clear outcomes."
+        },
+        "evidence_examples": "Industry partnership agreements, event records, internship data",
+        "owners": "Deans and Faculty Councils",
+        "linked_kpis": [
+          "KPI 5",
+          "KPI 10"
+        ],
+        "critical": true
+      },
+      {
+        "id": 4,
+        "item": "Shared infrastructure, platforms, or resources across institutions",
+        "score_anchors": {
+          "0": "No shared infrastructure.",
+          "1": "Limited or pilot sharing.",
+          "2": "Multiple active shared platforms/resources."
+        },
+        "evidence_examples": "Platform access logs, infrastructure agreements",
+        "owners": "IT Services and Digital Learning Centre",
+        "linked_kpis": [
+          "KPI 8"
+        ],
+        "critical": true
+      },
+      {
+        "id": 5,
+        "item": "Faculty and student mobility or exchange opportunities in AI and digitalisation",
+        "score_anchors": {
+          "0": "No mobility/exchange opportunities.",
+          "1": "Limited or pilot opportunities.",
+          "2": "Regular, structured mobility/exchange programmes."
+        },
+        "evidence_examples": "Mobility programme records, participation statistics",
+        "owners": "International Relations Office",
+        "linked_kpis": [
+          "KPI 4",
+          "KPI 7"
+        ],
+        "critical": false
+      },
+      {
+        "id": 6,
+        "item": "Dissemination of outcomes through joint events, publications, or platforms",
+        "score_anchors": {
+          "0": "No dissemination.",
+          "1": "Occasional dissemination.",
+          "2": "Regular, multi- channel dissemination."
+        },
+        "evidence_examples": "Event calendars, publication lists, platform analytics",
+        "owners": "Centre for Continuing Education and Lifelong Learning",
+        "linked_kpis": [
+          "KPI 3",
+          "KPI 10"
+        ],
+        "critical": false
+      },
+      {
+        "id": 7,
+        "item": "Recognition of collaborative achievements in institutional evaluations",
+        "score_anchors": {
+          "0": "No recognition.",
+          "1": "Some recognition in select cases.",
+          "2": "Systematic inclusion in evaluation and promotion processes."
+        },
+        "evidence_examples": "Evaluation guidelines, promotion criteria, review documentatio n",
+        "owners": "Vice- Rector for Research and Innovation",
+        "linked_kpis": [
+          "KPI 9"
+        ],
+        "critical": true
+      }
+    ],
+    "score_ranges": [
+      {
+        "score_range": "0–5 points",
+        "maturity_level": "Emerging",
+        "interpretation": "Collaboration on AI and digitalisation is fragmented and project-based. No stable partnerships or structured exchanges exist, and outcomes are rarely shared institutionally."
+      },
+      {
+        "score_range": "6–10 points",
+        "maturity_level": "Established",
+        "interpretation": "Formal partnerships and network participation are in place, though limited in scope or consistency. Joint projects, exchanges, and dissemination activities occur regularly but remain dependent on individual initiatives."
+      },
+      {
+        "score_range": "11–14 points",
+        "maturity_level": "Enhanced",
+        "interpretation": "Collaboration is strategic and institutionalised. The university maintains active national and international partnerships, shared infrastructure, and regular joint outputs. Cooperation is embedded in governance and staff evaluation processes."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before progressing to a higher level of maturity within the Collaboration and Networking dimension of the AI DTP framework, it is essential that all critical items identified in section 3.6.2 are fully implemented. For each critical item, the corresponding necessary actions must be clearly defined and executed (see Table below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Formalise at least one partnership agreement with another HEI or industry partner in digitalisation and AI.",
+        "requirement_text": "Required if Item 1 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          }
+        ],
+        "owners": "International Relations Office"
+      },
+      {
+        "id": "FA2",
+        "action": "Join or initiate participation in at least one national or EU-level digitalisation and AI network.",
+        "requirement_text": "Required if Item 2 = 0",
+        "required_if": [
+          {
+            "item_id": 2,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Vice-Rector for Research and Innovation"
+      },
+      {
+        "id": "FA3",
+        "action": "Establish a structured engagement process with at least one industry or community partner.",
+        "requirement_text": "Required if Item 3 = 0",
+        "required_if": [
+          {
+            "item_id": 3,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Deans and Faculty Councils"
+      },
+      {
+        "id": "FA4",
+        "action": "Provide access to at least one shared digital or AI infrastructure/platform with a partner institution.",
+        "requirement_text": "Required if Item 4 = 0",
+        "required_if": [
+          {
+            "item_id": 4,
+            "score_equals": 0
+          }
+        ],
+        "owners": "IT Services and Digital Learning Centre"
+      },
+      {
+        "id": "FA5",
+        "action": "Update institutional evaluation and promotion guidelines to recognise collaborative achievements.",
+        "requirement_text": "Required if Item 7 = 0",
+        "required_if": [
+          {
+            "item_id": 7,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Vice-Rector for Research and Innovation"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Map existing partnerships and identify potential partners in AI and digitalisation.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "International Relations Office"
+        },
+        {
+          "action": "Sign initial cooperation agreements with other HEIs or industry partners.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 5"
+          ],
+          "owners": "Vice-Rector for Research and Innovation"
+        },
+        {
+          "action": "Organise joint pilot activities such as workshops or seminars to explore opportunities.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 5"
+          ],
+          "owners": "Deans and Faculty Councils"
+        },
+        {
+          "action": "Establish internal coordination points for international collaboration.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 6"
+          ],
+          "owners": "International Relations Office"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Expand collaborative activities into joint teaching resources and shared curricula.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 8"
+          ],
+          "owners": "Deans and Faculty Councils"
+        },
+        {
+          "action": "Formalise governance structures for managing partnerships and joint projects.",
+          "linked_kpis": [
+            "KPI 6",
+            "KPI 9"
+          ],
+          "owners": "Vice-Rector for Research and Innovation"
+        },
+        {
+          "action": "Launch mobility opportunities for students and staff in AI and digitalisation.",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 7"
+          ],
+          "owners": "International Relations Office"
+        },
+        {
+          "action": "Integrate industry partners into projects through internships, mentorship, or case studies.",
+          "linked_kpis": [
+            "KPI 5",
+            "KPI 10"
+          ],
+          "owners": "Centre for Continuing Education and Lifelong Learning"
+        },
+        {
+          "action": "Disseminate outcomes through joint events, publications, and shared platforms.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 10"
+          ],
+          "owners": "Centre for Continuing Education and Lifelong Learning"
+        }
+      ],
+      "Enhanced": [
+        {
+          "action": "Lead or co-lead international alliances and consortia on AI and digitalisation.",
+          "linked_kpis": [
+            "KPI 6",
+            "KPI 2"
+          ],
+          "owners": "Vice-Rector for Research and Innovation"
+        },
+        {
+          "action": "Develop joint degrees, micro-credentials, or lifelong learning programmes across institutions.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 7"
+          ],
+          "owners": "Centre for Continuing Education and Lifelong Learning"
+        },
+        {
+          "action": "Establish shared infrastructure or innovation hubs with partner institutions and industry.",
+          "linked_kpis": [
+            "KPI 8",
+            "KPI 5"
+          ],
+          "owners": "IT Services and Digital Learning Centre"
+        },
+        {
+          "action": "Secure joint funding through European or international programmes.",
+          "linked_kpis": [
+            "KPI 10",
+            "KPI 6"
+          ],
+          "owners": "Vice-Rector for Research and Innovation"
+        },
+        {
+          "action": "Embed collaboration outcomes into institutional evaluation and promotion processes.",
+          "linked_kpis": [
+            "KPI 9"
+          ],
+          "owners": "Vice-Rector for Research and Innovation"
+        }
+      ]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "Number of active institutional partnerships in digitalisation and AI",
+        "targets": {
+          "Emerging": "≥2",
+          "Established": "≥6",
+          "Enhanced": "≥10"
+        },
+        "owners": "International Relations Office"
+      },
+      {
+        "id": "KPI2",
+        "name": " Percentage of faculties participating in at least one joint AI/digitalisation initiative per year",
+        "targets": {
+          "Emerging": "≥20",
+          "Established": "≥50",
+          "Enhanced": "≥70"
+        },
+        "owners": "Deans and Faculty Councils"
+      },
+      {
+        "id": "KPI3",
+        "name": "Number of joint outputs (co- developed courses, co- organized events, co- authored publications) per year",
+        "targets": {
+          "Emerging": "≥3",
+          "Established": "≥8",
+          "Enhanced": "≥15"
+        },
+        "owners": "Centre for Continuing Education and Lifelong Learning"
+      },
+      {
+        "id": "KPI4",
+        "name": "Percentage of students in relevant programmes (e.g. AI, digitalisation, related fields) participating in physical or virtual cross-institutional exchanges per year",
+        "targets": {
+          "Emerging": "≥1",
+          "Established": "≥5",
+          "Enhanced": "≥10"
+        },
+        "owners": "International Relations Office"
+      },
+      {
+        "id": "KPI5",
+        "name": "Number of industry or public sector partners in collaborative projects",
+        "targets": {
+          "Emerging": "≥3",
+          "Established": "≥10",
+          "Enhanced": "≥20"
+        },
+        "owners": "Deans and Faculty Councils"
+      },
+      {
+        "id": "KPI6",
+        "name": "Proportion of partnerships linked to international consortia (%)",
+        "targets": {
+          "Emerging": "≥10",
+          "Established": "≥30",
+          "Enhanced": "≥50"
+        },
+        "owners": "Vice-Rector for Research and Innovation"
+      },
+      {
+        "id": "KPI7",
+        "name": "Percentage of faculty and staff participating in at least one joint (cross- institutional or cross- sector) training or professional development activity in AI/digitalisation per year",
+        "targets": {
+          "Emerging": "≥20",
+          "Established": "≥40",
+          "Enhanced": "≥60"
+        },
+        "owners": "Centre for Continuing Education and Lifelong Learning"
+      },
+      {
+        "id": "KPI8",
+        "name": "Number of shared digital or AI infrastructure platforms operated jointly with partner institutions or industry (e.g. shared LMS instances, joint sandboxes, shared cloud environments)",
+        "targets": {
+          "Emerging": "≥1",
+          "Established": "≥2",
+          "Enhanced": "≥3"
+        },
+        "owners": "IT Services and Digital Learning Centre"
+      },
+      {
+        "id": "KPI9",
+        "name": "Recognition of collaboration outcomes (in AI and digitalization) in faculty evaluation and promotion processes (%)",
+        "targets": {
+          "Emerging": "≥20",
+          "Established": "≥40",
+          "Enhanced": "≥70"
+        },
+        "owners": "Vice-Rector for Research and Innovation"
+      },
+      {
+        "id": "KPI10",
+        "name": "Number of co-authored publications or joint funding applications related to AI and digitalisation (per year)",
+        "targets": {
+          "Emerging": "≥3",
+          "Established": "≥10",
+          "Enhanced": "≥20"
+        },
+        "owners": "Deans and Faculty Councils"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Centre for Continuing Education and Lifelong Learning": "",
+    "Deans and Faculty Councils": "",
+    "IT Services and Digital Learning Centre": "",
+    "International Relations Office": "",
+    "Vice-Rector for Research Innovation": ""
+  }
+}

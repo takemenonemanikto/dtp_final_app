@@ -1,0 +1,319 @@
+{
+  "area_id": "3.5",
+  "area_name": "AI supported Assessment Practices",
+  "intro": "3.5 I supported Assessment Practices",
+  "overview": "The assessment area covers the entire portfolio of activities through which we assess students’ knowledge and skills – from quick quizzes to extensive written exams and project assignments to peer review – and how AI can support, streamline, or enrich these processes. The aim is not only to measure knowledge, but also to provide valuable feedback to support further development. AI can bring automation to this process, ensure consistency of assessments, and at the same time, enable more personalized communication with students.",
+  "instructions": {
+    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical need to be implemented before approaching a higher maturity level (necessary/minimum conditions)."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Automated evaluation of closed questions (e.g. quizzes in LMS)",
+        "score_anchors": {
+          "0": "Not in use;",
+          "1": "Piloted;",
+          "2": "Fully implemented"
+        },
+        "evidence_examples": "LMS records, quiz logs, faculty reports",
+        "owners": "Department of Educational Technology (IT)",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Generation and partial evaluation of open-ended answers (essays, reflections) by AI",
+        "score_anchors": {
+          "0": "Not used;",
+          "1": "Piloted;",
+          "2": "Routine with teacher oversight"
+        },
+        "evidence_examples": "Assignment logs, pilot reports, teacher feedback",
+        "owners": "Teachers – pilot users",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2",
+          "KPI 3"
+        ],
+        "critical": false
+      },
+      {
+        "id": 3,
+        "item": "Drafting personalized comments on assignments based on rubrics",
+        "score_anchors": {
+          "0": "No AI comments;",
+          "1": "Piloted;",
+          "2": "Routine, with training"
+        },
+        "evidence_examples": "Assignment feedback samples, training records",
+        "owners": "Center for the Development of Teaching Competencies",
+        "linked_kpis": [
+          "KPI 3",
+          "KPI 5"
+        ],
+        "critical": false
+      },
+      {
+        "id": 4,
+        "item": "Integration of AI tools for plagiarism detection and originality verification",
+        "score_anchors": {
+          "0": "Not used;",
+          "1": "Piloted;",
+          "2": "Fully integrated in LMS"
+        },
+        "evidence_examples": "Plagiarism reports, LMS integration logs",
+        "owners": "Department of Educational Technology (IT)",
+        "linked_kpis": [
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 5,
+        "item": "Analytical reports on student performance and patterns",
+        "score_anchors": {
+          "0": "No analytics;",
+          "1": "Basic pilots;",
+          "2": "Advanced Dashboards"
+        },
+        "evidence_examples": "Analytics dashboards, faculty meeting minutes",
+        "owners": "Department of Educational Technology (IT)",
+        "linked_kpis": [
+          "KPI 5"
+        ],
+        "critical": false
+      },
+      {
+        "id": 6,
+        "item": "Adaptive assessment paths (dynamic difficulty)",
+        "score_anchors": {
+          "0": "Not used;",
+          "1": "Piloted;",
+          "2": "Routinely used"
+        },
+        "evidence_examples": "Assessment logs, adaptive tool usage reports",
+        "owners": "Department of Educational Technology (IT)",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 5"
+        ],
+        "critical": false
+      },
+      {
+        "id": 7,
+        "item": "Transparency of AI- supported assessment tools",
+        "score_anchors": {
+          "0": "No info;",
+          "1": "Basic in pilots;",
+          "2": "Full documentation"
+        },
+        "evidence_examples": "Guidance docs, surveys",
+        "owners": "Department of Quality and Ethics",
+        "linked_kpis": [
+          "KPI 3"
+        ],
+        "critical": true
+      }
+    ],
+    "score_ranges": [
+      {
+        "score_range": "0–5 points",
+        "maturity_level": "Emerging",
+        "interpretation": "AI use in assessment is limited to pilots or isolated tools (e.g., quizzes or plagiarism checkers). Processes are manual, fragmented, and lack transparency or oversight."
+      },
+      {
+        "score_range": "6–10 points",
+        "maturity_level": "Established",
+        "interpretation": "AI-supported assessment tools are routinely used in selected courses. Automated grading, feedback, and analytics exist but remain partially siloed. Ethical transparency is emerging, but full integration with institutional quality frameworks is pending."
+      },
+      {
+        "score_range": "11–14 points",
+        "maturity_level": "Enhanced",
+        "interpretation": "AI-driven assessment is systematic, ethical, and transparent. Adaptive assessments, analytics dashboards, and feedback automation are institution-wide. Processes comply with data protection, fairness, and explainability standards, enabling continuous improvement."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "In the early stages of implementation, it is crucial to first analyze existing assessment practices and identify the main problematic points for teachers and students. Based on a pilot study within one faculty, it is recommended to introduce AI to generate and automatically evaluate quizzes, which will free up teachers' capacities for better feedback. Once the effectiveness of these solutions is confirmed, it will be expanded to other subjects and additional teacher training will be carried out, focused on modifying and supplementing AI-generated comments so that they correspond to specific assessment goals. In the most advanced stages, it is necessary to translate the acquired knowledge into standard practices, including the creation of adaptive assessment scenarios that dynamically change the level of difficulty according to the current student results and provide deep statistical insights into common misunderstandings. Before approaching a higher level of maturity in the AI DTP area AI supported Assessment Practices, the critical items from 3.5.2 need to be fully implemented. For each unmet critical item, the necessary action needs to be specified to be performed (see table of foundational actions below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Implement automated evaluation of closed questions in at least one faculty and document process.",
+        "requirement_text": "Required if Item 1 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Department of Educational Technology (IT)"
+      },
+      {
+        "id": "FA2",
+        "action": "Integrate AI plagiarism detection tools into the LMS and ensure access for all relevant courses.",
+        "requirement_text": "Required if Item 4 = 0",
+        "required_if": [
+          {
+            "item_id": 4,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Department of Educational Technology (IT)"
+      },
+      {
+        "id": "FA3",
+        "action": "Ensure transparency and clear communication about AI- supported assessment tools for students and teachers.",
+        "requirement_text": "Required if Item 7 = 0",
+        "required_if": [
+          {
+            "item_id": 7,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Department of Quality and Ethics"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Map existing assessment processes and needs (workshop with teachers).",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Faculty Pedagogical Committee"
+        },
+        {
+          "action": "Pilot AI quiz generation tool in one faculty.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Department of Educational Technology (IT)"
+        },
+        {
+          "action": "Allocate budget and time for initial implementation.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Department of Educational Technology (IT)"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Extend AI scoring of closed and semi-open responses to multiple courses.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Department of Educational Technology (IT)"
+        },
+                {
+          "action": "Implement a comment drafting assistant, train teachers to review AI outputs.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 5"
+          ],
+          "owners": "Center for the Development of Teaching Competencies"
+        },
+                        {
+          "action": "Integrate automatic originality verification directly into the LMS.",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "Department of Educational Technology (IT)"
+        }
+      ],
+      "Enhanced": [        {
+          "action": "Monitor and optimize AI models based on student feedback.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 5"
+          ],
+          "owners": "Center for the Development of Teaching Competencies"
+        },
+                {
+          "action": "Create adaptive assessment scenarios that adjust difficulty in real time.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Department of Educational Technology (IT)"
+        },
+                        {
+          "action": "Share best practices across faculties, organize internal conferences on AI assessment.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Faculty Pedagogical Committee"
+        }]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "Average reduction in teacher time to manage assignments (design, grading, feedback logistics) after AI (Evident from a survey)",
+        "targets": {
+          "Emerging": "≥10% reduction",
+          "Established": "≥30% reduction",
+          "Enhanced": "≥50% reduction"
+        },
+        "owners": "Department of Educational Technology (IT)"
+      },
+      {
+        "id": "KPI2",
+        "name": "Percentage of courses that use at least one AI- supported assessment feature",
+        "targets": {
+          "Emerging": "≥10% of pilot courses",
+          "Established": "≥20% of courses",
+          "Enhanced": "≥30% of courses"
+        },
+        "owners": "Department of Educational Technology (IT)"
+      },
+      {
+        "id": "KPI3",
+        "name": "Student satisfaction rate with the quality of feedback (percentage of positive responses evident from a survey)",
+        "targets": {
+          "Emerging": "≥60%",
+          "Established": "≥70%",
+          "Enhanced": "≥80%"
+        },
+        "owners": "Center for the Development of Teaching Competencies"
+      },
+      {
+        "id": "KPI4",
+        "name": "Number of cases of plagiarism detected with AI detection",
+        "targets": {
+          "Emerging": "Baseline established",
+          "Established": "≥20% increase over baseline",
+          "Enhanced": "≥40% increase over baseline"
+        },
+        "owners": "Department of Quality and Ethics"
+      },
+      {
+        "id": "KPI5",
+        "name": "Percentage of courses/ programmes applying validated AI-assisted assessment or analytics tools",
+        "targets": {
+          "Emerging": "Baseline established",
+          "Established": "≥10% increase",
+          "Enhanced": "≥20% increase"
+        },
+        "owners": "Center for the Development of Teaching Competencies"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Center for the Development of Teaching Competencies": "",
+    "Department of Educational Technology (IT)": "",
+    "Department of Quality and Ethics": "",
+    "Faculty Pedagogical Committee": "",
+    "Teachers – pilot users": ""
+  }
+}

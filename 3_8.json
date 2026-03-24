@@ -1,0 +1,409 @@
+{
+  "area_id": "3.8",
+  "area_name": "AI regulations and ethics",
+  "intro": "3.8 AI regulations and ethics",
+  "overview": "This area addresses the ethical, legal, and regulatory dimensions of AI use in HEIs. Within the Alfa Labs project, it ensures that the deployment of AI tools in teaching, learning, administration, and research is aligned with EU-level and national legislation (notably the EU AI Act and GDPR) as well as with institutional values of fairness, transparency, accountability, and academic integrity. Final Beneficiary Report For universities, adopting AI responsibly is a prerequisite to building trust among students, faculty, and the public. While AI can deliver efficiency, personalization, and innovation, if misused it can lead to bias, breaches of privacy, or reputational damage. The Alfa Labs approach emphasizes that responsible AI governance is not a barrier but an enabler of sustainable digital transformation. This area covers: 1. Raising awareness of EU AI Act obligations and ethical guidelines. 2. Developing clear institutional policies for ethical AI use in teaching, learning, and research. 3. Ensuring data protection compliance adapted for AI (GDPR + AI-specific safeguards). 4. Transparent procurement and vendor accountability. 5. Establishing ethics and compliance committees to monitor AI adoption. 6. Training of staff and students in responsible AI practices. 7. Continuous monitoring and auditing of risks such as bias, discrimination, and misuse.",
+  "instructions": {
+    "maturity_scoring": "In order to estimate the current maturity level of particular university in AI regulations and ethics DTP area, there is a list of 7 scored questions/items with answers related to current progress in the questioned items on 0–2 scale (0-Not in place, 1-Partially in place, 2-Fully in place) provided in the table below. General rules for scoring items are described in chapter 2."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Awareness of EU AI Act among leadership and staff",
+        "score_anchors": {
+          "0": "No awareness;",
+          "1": "Awareness workshops planned;",
+          "2": "Ongoing awareness campaigns and staff training"
+        },
+        "evidence_examples": "Records of workshops, attendance lists, training materials",
+        "owners": "HR Departme nt",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 3"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Official guidelines for ethical AI use",
+        "score_anchors": {
+          "0": "None;",
+          "1": "Draft exists;",
+          "2": "Formally adopted"
+        },
+        "evidence_examples": "Published guidelines, policy documents",
+        "owners": "University Ethics Committe e",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Data protection policies adapted for AI applications (GDPR+)",
+        "score_anchors": {
+          "0": "Not adapted;",
+          "1": "Partially updated;",
+          "2": "Fully integrated and monitored"
+        },
+        "evidence_examples": "Updated GDPR policy, audit reports",
+        "owners": "Legal and Complian ce Office",
+        "linked_kpis": [
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 4,
+        "item": "Transparent and accountable AI procurement processes",
+        "score_anchors": {
+          "0": "No;",
+          "1": "Partially;",
+          "2": "Full transparency and audits"
+        },
+        "evidence_examples": "Procureme nt records, audit logs",
+        "owners": "Center for Informati on Systems",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 5,
+        "item": "Ethics or compliance committee overseeing AI deployment",
+        "score_anchors": {
+          "0": "No;",
+          "1": "In setup;",
+          "2": "Fully operational"
+        },
+        "evidence_examples": "Committee ToR, meeting minutes",
+        "owners": "University Ethics Committe e",
+        "linked_kpis": [
+          "KPI 5"
+        ],
+        "critical": true
+      },
+      {
+        "id": 6,
+        "item": "Staff and student training in responsible AI use",
+        "score_anchors": {
+          "0": "None;",
+          "1": "Partial;",
+          "2": "Systematic across institution"
+        },
+        "evidence_examples": "Training records, course syllabi",
+        "owners": "HR Departme nt, Student Parliamen t",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 3"
+        ],
+        "critical": false
+      },
+      {
+        "id": 7,
+        "item": "Active monitoring of risks (bias, misuse, discrimination)",
+        "score_anchors": {
+          "0": "None;",
+          "1": "Ad hoc;",
+          "2": "Formalized and systematic"
+        },
+        "evidence_examples": "Risk register, audit reports",
+        "owners": "University Ethics Committe e, Center for Informati on Systems",
+        "linked_kpis": [
+          "KPI 6"
+        ],
+        "critical": true
+      }
+    ],
+    "score_ranges": [
+    {
+        "score_range": "0–5",
+        "maturity_level": "Emerging",
+        "interpretation": "Awareness of ethical and legal AI aspects is low or fragmented. No formal policies, committees, or training in place. Risk management is reactive."
+      },
+      {
+        "score_range": "6–10",
+        "maturity_level": "Established",
+        "interpretation": "Basic ethics and compliance structures exist (e.g., guidelines, training, partial GDPR adaptation). Governance is in development but not yet fully embedded institution-wide. Monitoring and accountability are still ad hoc."
+      },
+      {
+        "score_range": "11–14",
+        "maturity_level": "Enhanced",
+        "interpretation": "Ethical AI principles are fully institutionalised. Comprehensive governance, regular risk audits, transparent procurement, and continuous training ensure compliance with the EU AI Act and GDPR+. The institution demonstrates leadership in responsible AI."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before approaching a higher level of maturity in the AI regulations and ethics DTP area, the critical items from 3.8.2 need to be fully implemented. For each unmet critical item, the necessary action needs to be specified to be performed (see table of foundational actions below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Conduct awareness sessions on EU AI Act & GDPR for leadership and staff.",
+        "requirement_text": "Required if Item 1 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          }
+        ],
+        "owners": "HR Department"
+      },
+      {
+        "id": "FA2",
+        "action": "Draft and formally adopt institutional guidelines for ethical AI use.",
+        "requirement_text": "Required if Item 2 = 0",
+        "required_if": [
+          {
+            "item_id": 2,
+            "score_equals": 0
+          }
+        ],
+        "owners": "University Ethics Committee"
+      },
+      {
+        "id": "FA3",
+        "action": "Update and monitor data protection policies to address AI-specific risks (GDPR+).",
+        "requirement_text": "Required if Item 3 = 0",
+        "required_if": [
+          {
+            "item_id": 3,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Legal and Compliance Office"
+      },
+      {
+        "id": "FA4",
+        "action": "Ensure transparent and auditable AI procurement processes.",
+        "requirement_text": "Required if Item 4 = 0",
+        "required_if": [
+          {
+            "item_id": 4,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Center for Information Systems"
+      },
+      {
+        "id": "FA5",
+        "action": "Establish an ethics or AI governance committee with a formal mandate to oversee AI adoption, including regular meetings and decision-making procedures.",
+        "requirement_text": "Required if Item 5 = 0",
+        "required_if": [
+          {
+            "item_id": 5,
+            "score_equals": 0
+          }
+        ],
+        "owners": "University Ethics Committee"
+      },
+      {
+        "id": "FA6",
+        "action": "Introduce a basic AI risk register and schedule at least annual reviews of AI systems for bias, misuse, and discrimination, with documented mitigation steps",
+        "requirement_text": "Required if Item 7 = 0",
+        "required_if": [
+          {
+            "item_id": 7,
+            "score_equals": 0
+          }
+        ],
+        "owners": "University Ethics Committee, Center for Information Systems"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Conduct awareness sessions on EU AI Act & GDPR.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 3"
+          ],
+          "owners": "HR Department"
+        },
+        {
+          "action": "Draft ethical AI guidelines for teaching, research, and administration.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "University Ethics Committee"
+        },
+        {
+          "action": "Establish an interdisciplinary AI Ethics Working Group.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "University Ethics Committee"
+        },
+        {
+          "action": "Identify high-risk AI applications as defined by the AI Act.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Legal and Compliance Office"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Formalize AI ethics audits across institutional systems.",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 6"
+          ],
+          "owners": "University Ethics Committee, Center for Information Systems"
+        },
+        {
+          "action": "Apply ethics-by-design in procurement and development.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Center for Information Systems"
+        },
+                {
+          "action": "Establish a transparency register of institutional AI systems.",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Center for Information Systems"
+        },
+        {
+          "action": "Include students in ethics policy-making.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 5"
+          ],
+          "owners": "Student Parliament, University Ethics Committee"
+        },
+        {
+          "action": "Run mandatory staff and student training on bias, risks, and responsible use.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 3"
+          ],
+          "owners": "HR Department, Student Parliament"
+        }
+      ],
+      "Enhanced": [        {
+          "action": "Integrate full AI Act compliance and ethical governance into institutional policy cycles, with annual reviews and reporting to leadership.",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 5"
+          ],
+          "owners": "Legal and Compliance Office, University Ethics Committee"
+        },
+        {
+          "action": "Operationalize a permanent AI Governance Council that oversees ethics, risk management, and compliance across all faculties and administrative units.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "University Ethics Committee"
+        },
+                {
+          "action": "Launch continuous training programs in responsible and transparent AI use for staff and students, embedded in professional development and curricula.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 3"
+          ],
+          "owners": "HR Department, Student Parliament"
+        },
+        {
+          "action": "Implement systematic AI risk monitoring and auditing, including bias detection, model transparency, and accountability reporting.",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Center for Information Systems, University Ethics Committee"
+        },
+        {
+          "action": "Ensure AI procurement follows ethics-by-design principles, with transparent vendor assessments and published audit results.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Center for Information Systems"
+        },
+              {
+          "action": "Maintain a public AI ethics and compliance register, summarizing institutional AI systems, risk categories, and mitigation actions.",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Center for Information Systems"
+        }]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "systems reviewed under ethics & compliance frameworks (annual)",
+        "targets": {
+          "Emerging": "≥30%",
+          "Established": "≥70%",
+          "Enhanced": "≥100%"
+        },
+        "owners": "University Ethics Committee, Center for Information Systems"
+      },
+      {
+        "id": "KPI2",
+        "name": "trained in AI regulations & ethics",
+        "targets": {
+          "Emerging": "≥20%",
+          "Established": "≥60%",
+          "Enhanced": "≥90%"
+        },
+        "owners": "HR Department"
+      },
+      {
+        "id": "KPI3",
+        "name": "completing AI ethics awareness module",
+        "targets": {
+          "Emerging": "≥10%",
+          "Established": "≥50%",
+          "Enhanced": "≥85%"
+        },
+        "owners": "Student Parliament, HR Department"
+      },
+      {
+        "id": "KPI4",
+        "name": "GDPR/AI Act compliance audits (annual reports)",
+        "targets": {
+          "Emerging": "Audit initiated",
+          "Established": "Audit completed, minor issues",
+          "Enhanced": "Audit completed, no major issues"
+        },
+        "owners": "Legal and Compliance Office"
+      },
+      {
+        "id": "KPI5",
+        "name": "ethics committee meetings per year",
+        "targets": {
+          "Emerging": "≥2",
+          "Established": "≥4",
+          "Enhanced": "≥6"
+        },
+        "owners": "University Ethics Committee"
+      },
+      {
+        "id": "KPI6",
+        "name": "incidents of AI-related bias/misuse detected per year",
+        "targets": {
+          "Emerging": "Baseline established",
+          "Established": "≤3",
+          "Enhanced": "≤1"
+        },
+        "owners": "University Ethics Committee, Center for Information Systems"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Center for Information Systems": "",
+    "HR Department": "",
+    "Legal and Compliance Office": "",
+    "Student Parliament": "",
+    "University Ethics Committee": ""
+  }
+}

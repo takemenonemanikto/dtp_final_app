@@ -1,0 +1,490 @@
+{
+  "area_id": "3.4",
+  "area_name": "Professional Development",
+  "intro": "3.4 Professional Development",
+  "overview": "Professional development (PD) in higher education has become a central dimension of academic work, enabling teaching staff to respond to changing pedagogical, institutional, and societal demands. It includes structured training, mentoring, and community building activities and is increasingly recognised as essential for maintaining teaching quality (Zhang, 2025). At the national level, frameworks and collective agreements reinforce this obligation. For example, in Austria universities are required to provide continuing professional education and training for their staff, though no fixed minimum hours are prescribed (Universities Act (UG), 2002). Survey evidence suggests that PD is already widespread in Europe. The STAFF-DEV survey reports that almost all institutions (96%) offer formal development opportunities, typically covering introductory didactics, assessment, and advanced topics such as digitally enhanced EN Page 48 of 118 ALFA Labs 2024-1-FI01-KA220-HED-000248157 trAnsformation pLan KA152, 153, 154 – Learning Mobility of Individuals For Ai Living Labs Final Beneficiary Report pedagogy and intercultural teaching (Zhang, 2025, p. 25). Informal and self-organised activities, such as peer mentoring or communities of practice, also play a key role in fostering continuous enhancement. However, provision remains uneven: participation is often optional, access varies across staff groups, and links to career progression are inconsistent. Mandatory training is mostly limited to newly hired staff, which means there are few opportunities for systematic, career-long upskilling in response to new challenges. (Zhang, 2025) The need for more structured and continuous professional development is particularly evident considering the rapid technological change. Among advanced PD offerings, digitalisation is the most common theme, covering e-learning, digital pedagogy, and digital literacy, often supported by national initiatives (Zhang, 2025, p. 25). Studies confirm that digital transformation in higher education can only succeed when staff have both pedagogical and technological expertise (Pausits et al., 2021) and digital opportunities for further education allow for more personalizes learning and digital support. This creates pressure on HEIs to move beyond one-off training and to scale up PD provision in a way that supports new modes of teaching and learning. In view of the ongoing disruptive change learning paths are becoming more individual. The most significant technological disruption today is the rise of artificial intelligence (AI). Since the release of large language models such as ChatGPT in 2022, teaching and learning practices have begun to change profoundly. Employers now expect graduates to demonstrate AI literacy and application skills, making these competences a core requirement for labour market readiness (Bomke et al., 2025), (Ding et al., 2024). As a result, higher education institutions face a dual challenge: preparing students for an AI-driven society while ensuring that lecturers themselves acquire the competences needed to use and integrate AI confidently and responsibly. Effective integration of AI into higher education requires more than technical familiarity. It demands rethinking teaching design, student engagement, and assessment methods in line with Constructive Alignment (Biggs, 1996). The DigCompEdu framework (Redecker, 2017) provides a useful orientation for defining these competences. It identifies areas of digital teaching competence that can be applied to AI: pedagogic competences, students’ competence promotion, and professional. EN Page 49 of 118 ALFA Labs 2024-1-FI01-KA220-HED-000248157 trAnsformation pLan KA152, 153, 154 – Learning Mobility of Individuals For Ai Living Labs Final Beneficiary Report In parallel, the European Union has formalised minimum expectations for AI competences through the AI Act. Article 4 stipulates that providers and deployers of AI systems must ensure staff achieve an adequate level of AI literacy. For HEIs, this creates a legal obligation to provide basic training in the technical, legal, and ethical aspects of AI use. Together, these competences show that AI literacy for teaching is multidimensional and must be systematically developed through professional development.",
+  "instructions": {
+    "maturity_scoring": "In order to estimate the current maturity level of particular university in Professional development area, there is a list of 7 scored questions/items with answers related to Current Progress in the questioned items on 0–2 scale (0-Not in place, 1-Partially in place, 2-Fully in place) provided in the table below. General rules for scoring items are described in chapter 2."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Compliance & regulatory focus: The institution has implemented trainings to ensure staff have basic AI literacy as required by legal AI/compliance frameworks (EU AI Act, GDPR)",
+        "score_anchors": {
+          "0": "No compliance training on AI;",
+          "1": "Ad hoc or partial compliance training;",
+          "2": "Mandatory, tracked, and regularly updated compliance training for all relevant staff"
+        },
+        "evidence_examples": "Training records, participati on logs, training materials, complianc e audit reports",
+        "owners": "Legal Department, Learning & Development Department (HR)",
+        "linked_kpis": [
+          "KPI 1"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Availability of AI-related professional development: The institution provides regular and structured professional development opportunities on AI (e.g.workshops, courses, trainings)",
+        "score_anchors": {
+          "0": "No regular AI PD;",
+          "1": "Occasional or pilot AI PD;",
+          "2": "Regular, structured, and role-specific AI PD available to all staff"
+        },
+        "evidence_examples": "PD calendar, attendanc e records, course catalogues",
+        "owners": "Learning & Development Department (HR), Teaching and Learning Department",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 3"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Alignment with teaching practices: Professional development activities are aligned with institutional and teaching practices (e.g. constructive alignment), ensuring that training supports staff in applying AI competences within their daily teaching and administrative work",
+        "score_anchors": {
+          "0": "No alignment;",
+          "1": "Partial or informal alignment;",
+          "2": "Systematic alignment with teaching frameworks and practices"
+        },
+        "evidence_examples": "PD module outlines, mapping document s, feedback from heads of departmen t",
+        "owners": "Heads of Departments, Teaching and Learning Department",
+        "linked_kpis": [
+          "KPI 4",
+          "KPI 5"
+        ],
+        "critical": true
+      },
+      {
+        "id": 4,
+        "item": "Pedagogical application: Professional development enables staff to develop and apply AI (teaching) competences, including the integration of AI into pedagogical design, assessment, and promotion of students’ own AI competences",
+        "score_anchors": {
+          "0": "No focus on pedagogical application;",
+          "1": "Some modules address pedagogy;",
+          "2": "Comprehensive coverage of pedagogical AI competences in PD"
+        },
+        "evidence_examples": "Module content, staff portfolios, curriculu m integratio n evidence",
+        "owners": "Teaching and Learning Department, Heads of Departments",
+        "linked_kpis": [
+          "KPI 4",
+          "KPI 5"
+        ],
+        "critical": false
+      },
+      {
+        "id": 5,
+        "item": "Personalization of learning: AI- related professional development programs are tailored to different roles, prior knowledge and competence needs, offering tailored pathways that support technical, pedagogical, and professional development goals",
+        "score_anchors": {
+          "0": "No personalization;",
+          "1": "Limited or pilot personalization;",
+          "2": "Systematic, role-based personalized pathways in place"
+        },
+        "evidence_examples": "Pathway documentation, competence assessment records, staff feedback",
+        "owners": "Learning & Development Department (HR)",
+        "linked_kpis": [
+          "KPI 6"
+        ],
+        "critical": false
+      },
+      {
+        "id": 6,
+        "item": "Participation in AI-related trainings is mandatory and formally recognised",
+        "score_anchors": {
+          "0": "No mandatory training.",
+          "1": "Mandatory for some staff or at onboarding only",
+          "2": "Mandatory and recognised for all relevant staff, linked to career progression"
+        },
+        "evidence_examples": "Policy document s, HR records, promotion criteria",
+        "owners": "Learning & Development Department (HR)",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2"
+        ],
+        "critical": true
+      },
+      {
+        "id": 7,
+        "item": "Knowledge hub/repository: The institution provides repositories or knowledge hubs for teaching and academic staff where relevant AI-related information is available and organised into different categories",
+        "score_anchors": {
+          "0": "No structured repository.",
+          "1": "Basic or informal repository.",
+          "2": "Comprehensive, curated, and regularly updated knowledge hub with usage tracking"
+        },
+        "evidence_examples": "Repository access logs, resource catalogue, update logs",
+        "owners": "Teaching and Learning Department, IT Department",
+        "linked_kpis": [
+          "KPI 7",
+          "KPI 8"
+        ],
+        "critical": false
+      }
+    ],
+    "score_ranges": [
+      {
+        "score_range": "0–5 points",
+        "maturity_level": "Emerging",
+        "interpretation": "AI-related training is ad hoc or optional. There is no structured professional development strategy, limited compliance awareness, and no consistent link between AI competences and teaching practice."
+      },
+      {
+        "score_range": "6–10 points",
+        "maturity_level": "Established",
+        "interpretation": "FRegular AI-focused professional development is in place. Training aligns partially with institutional teaching frameworks and covers pedagogical applications. Participation is growing, though not yet universal or personalized."
+      },
+      {
+        "score_range": "11–14 points",
+        "maturity_level": "Enhanced",
+        "interpretation": "AI literacy and pedagogical competence are fully embedded in institutional professional development. Training is mandatory, personalized, and aligned with regulatory, ethical, and pedagogical standards. Continuous improvement and knowledge-sharing are supported through structured repositories and mentoring systems."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before approaching a higher level of maturity in the Professional development AI DTP area, the critical items from 3.4.2 need to be fully implemented. For each unmet critical item, the necessary action needs to be specified to be performed (see table of foundational actions below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Implement and track mandatory AI compliance training for all relevant staff, covering legal, technical, and ethical aspects",
+        "requirement_text": "Required if Item 1 = 0 or Item 6 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          },
+          {
+            "item_id": 6,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Legal Department, Learning & Development Department (HR)"
+      },
+      {
+        "id": "FA2",
+        "action": "Establish regular, structured AI-related professional development opportunities accessible to all staff",
+        "requirement_text": "Required if Item 2 = 0",
+        "required_if": [
+          {
+            "item_id": 2,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Learning & Development Department (HR), Teaching and Learning Department"
+      },
+      {
+        "id": "FA3",
+        "action": "Align professional development activities with institutional teaching practices and frameworks",
+        "requirement_text": "Required if Item 3 = 0",
+        "required_if": [
+          {
+            "item_id": 3,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Heads of Departments, Teaching and Learning Department"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Introduce low-threshold offers such as micro-learnings and short awareness sessions",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Keep participation voluntary at first but signal institutional commitment to AI training",
+          "linked_kpis": [
+            "KPI 2"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Consider partnerships with EdTech providers or internal experts to support content delivery",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Offer role-based trainings (e.g., for teaching staff, administrators, IT)",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Allow staff to self-select training offers relevant to their daily tasks",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Conduct a mapping exercise to identify current and potential AI applications in teaching, administration, and research",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "Heads of Departments"
+        },
+        {
+          "action": "Use findings to inform future training priorities and align professional development with actual institutional practices",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "Heads of Departments"
+        },
+        {
+          "action": "Introduce mandatory training modules for staff working with AI systems",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Legal Department, Learning & Development Department (HR)"
+        },
+        {
+          "action": "Cover the minimum legal and ethical obligations (technical, legal, and ethical aspects of AI)",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Legal Department"
+        },
+        {
+          "action": "Monitor participation and assess knowledge acquisition",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Refresh training annually in a condensed format",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Learning & Development Department (HR), Legal Department"
+        },
+        {
+          "action": "Provide a basic collection of resources (videos, articles, templates) that is easy to access",
+          "linked_kpis": [
+            "KPI 7"
+          ],
+          "owners": "Teaching and Learning Department"
+        },
+        {
+          "action": "Ensure the AI resource collection / knowledge hub is visible to all staff, serves as a starting point for self-directed learning, and its use is regularly monitored (e.g. visits, downloads) to actively increase engagement over time.",
+          "linked_kpis": [
+            "KPI 7",
+            "KPI 8"
+          ],
+          "owners": "Teaching and Learning Department"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Regularly gather data on staff training needs across departments and roles",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR), Heads of Departments"
+        },
+        {
+          "action": "Define relevant AI tools for teaching, research, and administration",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "IT Department, Heads of Departments"
+        },
+        {
+          "action": "Develop a competence framework (technical, pedagogical, competence promotion, professional, transversal)",
+          "linked_kpis": [
+            "KPI 5",
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR), Teaching and Learning Department"
+        },
+        {
+          "action": "Translate role-specific needs and competence framework into clear learning objectives aligned with teaching practices",
+          "linked_kpis": [
+            "KPI 5",
+            "KPI 6"
+          ],
+          "owners": "Teaching and Learning Department, Heads of Departments"
+        },
+        {
+          "action": "Offer introductory, intermediate, and advanced training",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Tailor modules by role (lecturer, researcher, admin)",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Include discipline-specific applications and advanced topics (e.g., AI in assessment design, curriculum integration)",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 4",
+            "KPI 5"
+          ],
+          "owners": "Teaching and Learning Department, Heads of Departments"
+        },
+        {
+          "action": "Make selected modules mandatory at key career stages (onboarding, leadership)",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Track participation systematically",
+          "linked_kpis": [
+            "KPI 2"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Link outcomes to promotion criteria and certificates",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR), Heads of Departments"
+        }
+      ],
+      "Enhanced": [
+        {
+          "action": "Regularly refresh training modules and repository content to reflect new AI tools, pedagogical approaches, and regulatory changes",
+          "linked_kpis": [
+            "KPI 7",
+            "KPI 3"
+          ],
+          "owners": "Teaching and Learning Department, IT Department"
+        },
+        {
+          "action": "Implement a stackable module system offering a broad catalogue of AI-related courses",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Allow modules to be combined into micro-credentials or certificates",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Introduce initial competence assessments to define entry levels and personalize pathways",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        },
+        {
+          "action": "Ensure flexibility so staff can progress from awareness to advanced expertise, with recognition at every step",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Learning & Development Department (HR)"
+        }
+      ]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "Percentage of staff who completed mandatory AI compliance training (EU AI Act, GDPR)",
+        "targets": {
+          "Emerging": "≥30",
+          "Established": "≥70",
+          "Enhanced": "≥95"
+        },
+        "owners": "Learning & Development Department (HR), Legal Department"
+      },
+      {
+        "id": "KPI2",
+        "name": "Participation rate (% of staff attending at least one AI-training per year)",
+        "targets": {
+          "Emerging": "≥25",
+          "Established": "≥60",
+          "Enhanced": "≥85"
+        },
+        "owners": "Learning & Development Department (HR)"
+      },
+      {
+        "id": "KPI3",
+        "name": "Number of AI-related professional development modules or sessions available in the institutional catalogue per academic year",
+        "targets": {
+          "Emerging": "≥1",
+          "Established": "≥10",
+          "Enhanced": "≥20"
+        },
+        "owners": "Learning & Development Department (HR), Teaching and Learning Department"
+      },
+      {
+        "id": "KPI4",
+        "name": "Number of AI-related use cases integrated into curricula after AI trainings",
+        "targets": {
+          "Emerging": "≥2",
+          "Established": "≥8",
+          "Enhanced": "≥20"
+        },
+        "owners": "Heads of Departments, Teaching and Learning Department"
+      },
+      {
+        "id": "KPI5",
+        "name": "Percentage of staff applying AI competences in lesson design, student engagement, or assessment (evident by a survey)",
+        "targets": {
+          "Emerging": "≥10",
+          "Established": "≥40",
+          "Enhanced": "≥75"
+        },
+        "owners": "Heads of Departments, Teaching and Learning Department"
+      },
+      {
+        "id": "KPI6",
+        "name": "Percentage of staff with active, role-based AI learning pathways9",
+        "targets": {
+          "Emerging": "≥10",
+          "Established": "≥30",
+          "Enhanced": "≥50"
+        },
+        "owners": "Learning & Development Department (HR)"
+      },
+      {
+        "id": "KPI7",
+        "name": "Number of AI-related resources available in the institutional repository",
+        "targets": {
+          "Emerging": "≥20",
+          "Established": "≥60",
+          "Enhanced": "≥120"
+        },
+        "owners": "Teaching and Learning Department, IT Department"
+      },
+      {
+        "id": "KPI8",
+        "name": "Average monthly proportion of staff who engage at least once with the institutional repository or AI Knowledge Hub10",
+        "targets": {
+          "Emerging": "≥10 action/month",
+          "Established": "≥30 action/month",
+          "Enhanced": "≥50 action/mont h"
+        },
+        "owners": "Teaching and Learning Department, IT Department"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Heads of Departments": "",
+    "Teaching and Learning Department": "",
+    "IT Department": "",
+    "Learning & Development Department (HR)": "",
+    "Legal Department": ""
+  }
+}

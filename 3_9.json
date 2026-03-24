@@ -1,0 +1,443 @@
+{
+  "area_id": "3.9",
+  "area_name": "Security & Privacy",
+  "intro": "3.9 Security & Privacy",
+  "overview": "This domain refers to the essential principles, technical safeguards, and governance mechanisms required to ensure responsible and secure AI adoption in higher education. It covers data protection, privacy, cybersecurity, access control, infrastructure security, and ethical risk management when using AI systems, both internal and external. As AI increasingly interacts with sensitive academic, personal, and institutional data, universities face growing demands to establish clear rules, technical controls, and awareness programs that mitigate risks and align AI use with legal and ethical standards, including GDPR or national regulations. Without comprehensive security and privacy frameworks, AI adoption may expose institutions to legal liabilities, data breaches, and loss of trust among students and staff. This domain reflects the university’s capacity to implement secure AI environments, protect personal and sensitive data, promote user accountability, and build AI literacy that includes awareness of privacy and security risks.",
+  "instructions": {
+    "maturity_scoring": "In order to estimate the current maturity level of particular university in the Security and privacy AI DTP area, there is a list of 7 scored questions/items with answers related to current progress in the questioned items on 0–2 scale (0-Not in place, 1-Partially in place, 2-Fully in place) provided in the table below. General rules for scoring items are described in chapter 2."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "AI-specific internal policies and guidelines on privacy and security",
+        "score_anchors": {
+          "0": "No AI- specific policies or guidelines.",
+          "1": "Drafted or partial policies exist, but not institution-wide or not enforced.",
+          "2": "Approved, institution-wide AI privacy and security policies, regularly reviewed and enforced"
+        },
+        "evidence_examples": "Approved policy documents, review logs, communication to staff/students",
+        "owners": "Chief Information Security Officer (CISO) / Data Protection Officer (DPO)",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2",
+          "KPI 6"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Regulation of input of personal/sensitive data into external AI tools",
+        "score_anchors": {
+          "0": "No restrictions or guidance.",
+          "1": "Informal or partial restrictions; not monitored.",
+          "2": "Formal prohibition or regulated process, with monitoring and enforcement."
+        },
+        "evidence_examples": "Policy statements, monitoring reports, incident logs",
+        "owners": "DPO / Director of IT",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Technical measures to protect data and infrastructure when using AI",
+        "score_anchors": {
+          "0": "No technical safeguards specific to AI.",
+          "1": "Some technical controls in place, but not comprehensiv e or regularly tested.",
+          "2": "Comprehensi ve, regularly tested technical safeguards for AI systems."
+        },
+        "evidence_examples": "Security audit reports, system logs, penetration test results",
+        "owners": "Director of IT / CISO",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 5"
+        ],
+        "critical": true
+      },
+      {
+        "id": 4,
+        "item": "Regular training on responsible AI use, including privacy and security",
+        "score_anchors": {
+          "0": "No training provided", 
+          "1": "Occasional or voluntary training; limited coverage.", 
+          "2": "Regular, mandatory training for staff and students, with tracked participation."
+        },
+        "evidence_examples": "Training records, attendance logs, feedback surveys",
+        "owners": "Faculty/Department Heads / HR / DPO",
+        "linked_kpis": [
+          "KPI 3"
+        ],
+        "critical": false
+      },
+      {
+        "id": 5,
+        "item": "Rules for transparency and accountability in AI use",
+        "score_anchors": {
+          "0": "No rules or disclosure requirements.",
+          "1": "Some rules exist, but not enforced or communicate d.",
+          "2": "Clear, enforced rules for disclosure and accountability , with reporting mechanisms."
+        },
+        "evidence_examples": "Policy documents, disclosure forms, incident reports",
+        "owners": "AI Ethics or Governance Committee / Legal Department",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4",
+          "KPI 6"
+        ],
+        "critical": false
+      },
+      {
+        "id": 6,
+        "item": "Use of internal AI tools/platforms compliant with privacy requirements",
+        "score_anchors": {
+          "0": "No preference or requirements for compliant tools.",
+          "1": "Some compliant tools used, but external/non- compliant tools still prevalent.",
+          "2": "Majority of AI tools are internal and complian, external use is controlled;"
+        },
+        "evidence_examples": "Procurement records, tool inventories, compliance checklists",
+        "owners": "Director of IT / Procurement",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 5"
+        ],
+        "critical": false
+      },
+      {
+        "id": 7,
+        "item": "Integration of privacy and security in digital transformation strategy (GDPR, AI Act)",
+        "score_anchors": {
+          "0": "Not included in strategy.",
+          "1": "Mentioned but not operationalise d.",
+          "2": "Fully integrated, with actions and monitoring."
+        },
+        "evidence_examples": "Strategy documents, action plans, compliance reports",
+        "owners": "Rector/Preside nt / DPO",
+        "linked_kpis": [
+          "KPI 6"
+        ],
+        "critical": true
+      }
+    ],
+    "score_ranges": [
+    {
+        "score_range": "0–5",
+        "maturity_level": "Emerging",
+        "interpretation": "Initial awareness of AI privacy and security risks; basic alignment with national laws but no AI-specific policies; limited technical safeguards."
+      },
+      {
+        "score_range": "6–10",
+        "maturity_level": "Established",
+        "interpretation": "Institutional policies and technical measures in place; AI-specific rules defined; responsible AI practices promoted among staff and students."
+      },
+      {
+        "score_range": "11–14",
+        "maturity_level": "Enhanced",
+        "interpretation": "Fully integrated security and privacy frameworks; robust internal AI tools; proactive user accountability; alignment with national and EU AI strategies."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before approaching a higher level of maturity in the Security and privacy AI DTP area, the critical items from 3.9.2 need to be fully implemented. For each unmet critical item, the necessary action needs to be specified to be performed (see table of foundational actions below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Approve and communicate AI-specific privacy and security policies and guidelines.",
+        "requirement_text": "Required if Item 1 = 0 or Item 7 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          },
+          {
+            "item_id": 7,
+            "score_equals": 0
+          }
+        ],
+        "owners": "CISO / DPO"
+      },
+      {
+        "id": "FA2",
+        "action": "Establish and enforce formal restrictions on input of personal/sensitive data into external AI tools.",
+        "requirement_text": "Required if Item 2 = 0",
+        "required_if": [
+          {
+            "item_id": 2,
+            "score_equals": 0
+          }
+        ],
+        "owners": "DPO / Director of IT"
+      },
+      {
+        "id": "FA3",
+        "action": "Implement and regularly test technical safeguards for AI systems and data infrastructure.",
+        "requirement_text": "Required if Item 3 = 0",
+        "required_if": [
+          {
+            "item_id": 3,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Director of IT / CISO"
+      },
+      {
+        "id": "FA4",
+        "action": "Integrate privacy and security requirements into the digital transformation strategy, with GDPR/AI Act compliance.",
+        "requirement_text": "Required if Item 7 = 0",
+        "required_if": [
+          {
+            "item_id": 7,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Rector/President / DPO"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Raise awareness about AI-related privacy and security risks among staff and students.",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "Faculty/Department Heads / DPO"
+        },
+        {
+          "action": "Align existing institutional policies with national laws (e.g., GDPR).",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 6"
+          ],
+          "owners": "DPO / Legal Department"
+        },
+        {
+          "action": "Restrict use of external AI tools for sensitive data.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 4"
+          ],
+          "owners": "Director of IT / DPO"
+        },
+        {
+          "action": "Introduce basic technical safeguards for AI use (e.g., encryption, access restrictions).",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT / CISO"
+        },
+        {
+          "action": "Introduce basic disclosure rules for AI use in academic outputs.",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "AI Ethics or Governance Committee / Faculty/Department Heads"
+        },
+        {
+          "action": "Prefer internal or EU-compliant AI tools where possible.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT"
+        },
+        {
+          "action": "Mention privacy and security requirements in institutional digital strategies.",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "DPO / Legal Department"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Develop AI-specific internal policies (e.g., responsible use guidelines for theses and assignments).",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 6"
+          ],
+          "owners": "CISO / DPO / Legal Department"
+        },
+        {
+          "action": "Deploy internal AI tools with data protection measures.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT"
+        },
+        {
+          "action": "Conduct regular training on AI ethics and security.",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "HR / Faculty/Department Heads / DPO"
+        },
+        {
+          "action": "Promote transparency and accountability among users.",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 6"
+          ],
+          "owners": "AI Ethics or Governance Committee / Faculty/Department Heads"
+        },
+        {
+          "action": "Establish and enforce formal procedures for restricting sensitive data input into external AI tools.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 4"
+          ],
+          "owners": "DPO / Director of IT"
+        },
+        {
+          "action": "Regularly test technical safeguards and conduct security audits of AI systems.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT / CISO"
+        },
+        {
+          "action": "Operationalize privacy and security requirements in digital transformation action plans.",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "DPO / Legal Department"
+        }
+      ],
+      "Enhanced": [ {
+          "action": "Fully integrate AI security and privacy measures into the digital transformation strategy.",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "DPO / Legal Department"
+        },
+        {
+          "action": "Prioritize internal, EU-compliant AI platforms.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT"
+        },
+        {
+          "action": "Foster AI literacy that includes privacy, security, and ethical dimensions.",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "HR / Faculty/Department Heads / DPO"
+        },
+        {
+          "action": "Regularly review and update governance frameworks in line with evolving legislation (e.g., EU AI Act).",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 6"
+          ],
+          "owners": "CISO / Legal Department / AI Ethics or Governance Committee"
+        },
+        {
+          "action": "Automate monitoring and auditing of sensitive data use in AI tools.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 4"
+          ],
+          "owners": "DPO / Director of IT"
+        },
+        {
+          "action": "Integrate AI security into institutional cybersecurity and incident response systems.",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 5"
+          ],
+          "owners": "Director of IT / CISO"
+        },
+      {
+          "action": "Conduct periodic audits to ensure long-term compliance and accountability.",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "AI Ethics or Governance Committee / Legal Department"
+        }]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "rate of AI-specific privacy and security guidelines26 (share of faculties/departments or central units that have formally adopted and communicated the AI privacy & security guidelines)",
+        "targets": {
+          "Emerging": "≥20%",
+          "Established": "≥60%",
+          "Enhanced": "≥90%"
+        },
+        "owners": "CISO / DPO"
+      },
+      {
+        "id": "KPI2",
+        "name": "deployed AI tools aligned with GDPR and security policies",
+        "targets": {
+          "Emerging": "≥30%",
+          "Established": "≥70%",
+          "Enhanced": "≥100%"
+        },
+        "owners": "Director of IT / Procurement"
+      },
+      {
+        "id": "KPI3",
+        "name": "staff/students trained in AI privacy and security (annual)",
+        "targets": {
+          "Emerging": "≥10%",
+          "Established": "≥30%",
+          "Enhanced": "≥50%"
+        },
+        "owners": "HR / Faculty/Department Heads / DPO"
+      },
+      {
+        "id": "KPI4",
+        "name": "timeliness of AI-related security audits",
+        "targets": {
+          "Emerging": "None",
+          "Established": "At least one AI security audit per year covering the main institutional AI systems",
+          "Enhanced": "Bi-annual full- scope AI security audit; ≥90 % of identified issues resolved within 60 days"
+        },
+        "owners": "CISO / Director of IT"
+      },
+      {
+        "id": "KPI5",
+        "name": "systems that process institutional data and are operated on internal or EU-compliant secure platforms",
+        "targets": {
+          "Emerging": "≥20%",
+          "Established": "≥60%",
+          "Enhanced": "≥90%"
+        },
+        "owners": "Director of IT / Procurement"
+      },
+      {
+        "id": "KPI6",
+        "name": "compliance index (0– 100)27",
+        "targets": {
+          "Emerging": "<40",
+          "Established": "40–79",
+          "Enhanced": "≥80"
+        },
+        "owners": "DPO / Legal Department"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "AI Ethics or Governance Committee": "",
+    "HR/Faculty/Department Heads": "",
+    "Chief Information Security Officer CISO": "",
+    "DPO": "",
+    "Legal Department": "",
+    "Director of IT": "",
+    "Procurement": "",
+    "Department Heads": "",
+    "HR": "",
+    "Rector": "",
+    "President": ""
+  }
+}

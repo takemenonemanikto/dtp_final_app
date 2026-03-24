@@ -1,0 +1,372 @@
+{
+  "area_id": "3.3",
+  "area_name": "Content & Curricula ",
+  "intro": "3.3 Content and Curricula",
+  "overview": "The rapid and continuous advancement of AI technologies, increasingly embedded across economic, social, and personal domains, has produced significant transformations in diverse fields, including industry, healthcare, society, and education. Inevitably, these developments exert a profound influence on the educational sector in general, and on higher education in particular. Higher education institutions (HEIs) represent complex organisational entities that fulfil multiple roles, including teaching, research, and service, often supported by substantial public or private investment. Addressing these challenges within higher education requires deliberate curricular and pedagogical strategies to ensure that students and staff across disciplines acquire both a critical understanding of, and practical competencies in, AI technologies. Two key approaches can be identified in this regard. First, AI literacy must be systematically integrated into curriculum design and content development, enabling learners to critically engage with and ethically apply AI systems. Second, teaching methodologies within universities should be adapted to cultivate transferable skills, ensuring that students are equipped with the flexibility, critical thinking, and adaptability needed to respond to the evolving digital landscape.",
+  "instructions": {
+    "maturity_scoring": "In order to estimate the current maturity level of particular university in this specific area, there is a list of 7 scored questions/items with answers related to Current Progress in the questioned items on 0–2 scale (0-Not in place, 1-Partially in place, 2-Fully in place) provided in the table below. General rules for scoring items are described in chapter 2."
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Integration of AI literacy in program curricula5",
+        "score_anchors": {
+          "0": "No systematic integration; only isolated pilots or optional modules.",
+          "1": "AI Literacy present in some programs or fields, but not institution-wide or not covering all dimensions.",
+          "2": "AI Literacy systematically embedded across all programs and fields, covering technical, ethical, and data fluency aspects."
+        },
+        "evidence_examples": "Curriculum maps, program specifications, module descriptors, evidence of cross-field integration.",
+        "owners": "Academic Governance and Program Leadership / Deans of Faculty / Head of Schools",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Students and staff understand and apply relevant AI regulations, including the EU AI Act.",
+        "score_anchors": {
+          "0": "No training or communication on regulatory frameworks." ,
+          "1": "Some awareness activities or materials, but not comprehensive or mandatory", 
+          "2": "Mandatory training or curriculum components for all students and staff; evidence of understanding and application."
+        },
+        "evidence_examples": "Training records, curriculum content, assessment results, staff/studen t surveys.",
+        "owners": "Legal / Compliance Units, Data Protection Officers (DPOs), Program Directors",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Learning goals updated in all fields to reflect authentic and relevant AI applications.",
+        "score_anchors": {
+          "0": "No updates to learning goals; outdated or generic references.", 
+          "1": "Some programs updated, but not systematic or not field-specific.",
+          "2": "All programs have reviewed and updated learning goals to reflect AI relevance and authentic examples."
+        },
+        "evidence_examples": "Program review documents, updated learning outcomes, accreditatio n reports.",
+        "owners": "Program Directors / Course Leaders",
+        "linked_kpis": [
+          "KPI 1"
+        ],
+        "critical": false
+      },
+      {
+        "id": 4,
+        "item": "Assessment practices aligned with ethical and practical use of AI in learning.",
+        "score_anchors": {
+          "0": "No consideration of AI in assessment; traditional methods only.", 
+          "1": "Some pilots or guidelines, but not institution-wide.",
+          "2": "Institution-wide alignment of assessment with AI use, including ethical and practical dimensions."
+        },
+        "evidence_examples": "Assessment policies, sample assignments , moderation reports.",
+        "owners": "Teaching Staff, Educational Support and Innovation Units",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": false
+      },
+      {
+        "id": 5,
+        "item": "Institutional framework defines AI Literacy content, integration methods, and transferable skills.",
+        "score_anchors": {
+          "0": "No framework or only draft documents.",
+          "1": "Framework exists but is not widely adopted or lacks clarity",
+          "2": "Approved, accessible framework with clear guidance and adoption across faculties."
+        },
+        "evidence_examples": "Framework document, faculty communications, training materials",
+        "owners": "Educational Support and Innovation Units, Academic Governance",
+        "linked_kpis": [
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 6,
+        "item": "AI-enhanced learning paths promote active learning, critical thinking, and inclusivity.",
+        "score_anchors": {
+          "0": "No AI- enhanced paths or only isolated pilots.",
+          "1": "Some courses use AI to foster these skills, but not systematically.",
+          "2": "Systematic use of AI-enhanced paths across programs, with evidence of impact on learning outcomes."
+        },
+        "evidence_examples": "Course syllabi, student feedback, learning analytics.",
+        "owners": "Teaching Staff, Teaching & Learning Centers",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2"
+        ],
+        "critical": false
+      },
+      {
+        "id": 7,
+        "item": "AI curricula are competence- based, combining knowledge and practical AI skills.",
+        "score_anchors": {
+          "0": "Content is knowledge-based only; no practical skills.",
+          "1": "Some practical skills included, but not systematically.",
+          "2": "Competence- based curricula with balanced knowledge and practical skills, assessed and evidenced."
+        },
+        "evidence_examples": "Curriculum documents, assessment rubrics, student portfolios.",
+        "owners": "Program Directors, Teaching Staff",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 2"
+        ],
+        "critical": false
+      }
+    ],
+    "score_ranges": [
+      {
+        "score_range": "0–5 points",
+        "maturity_level": "Emerging",
+        "interpretation": "AI literacy and regulation awareness appear only in isolated courses. Learning goals and assessments are not adapted for AI contexts, and there is no institutional framework to guide integration."
+      },
+      {
+        "score_range": "6–10 points",
+        "maturity_level": "Established",
+        "interpretation": "AI literacy and competence-based content are included in multiple programs. An institutional framework exists, but adoption is uneven. Ethical and regulatory aspects are partially integrated into curricula and assessment."
+      },
+      {
+        "score_range": "11–14 points",
+        "maturity_level": "Enhanced",
+        "interpretation": "AI literacy is fully embedded across disciplines. Curricula are competence-based, aligned with ethical and legal standards, and supported by active learning and inclusivity principles. Continuous review ensures authenticity and relevance of AI applications."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before approaching a higher level of maturity in the Content and curricula AI DTP area, the critical items from 3.3.2 need to be fully implemented. For each unmet critical item, the necessary action needs to be specified to be performed (see table of foundational actions below).",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Develop and approve an institutional AI Literacy framework, including definitions, integration guidance, and coverage of transferable skills.",
+        "requirement_text": "Required if Item 1 = 0 or Item 5 = 0",
+        "required_if": [
+          {
+            "item_id": 1,
+            "score_equals": 0
+          },
+          {
+            "item_id": 5,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Educational Support and Innovation Units, Academic Governance"
+      },
+      {
+        "id": "FA2",
+        "action": "Ensure all students and staff receive training or curriculum content on relevant regulatory frameworks (e.g., EU AI Act).",
+        "requirement_text": "Required if Item 2 = 0",
+        "required_if": [
+          {
+            "item_id": 2,
+            "score_equals": 0
+          }
+        ],
+        "owners": "Legal / Compliance Units, Data Protection Officers (DPOs), Program Directors"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Develop an Institutional Framework: Establish clear definitions of AI Literacy (knowledge, skills, attitudes) tailored to the HEI context; align with regulatory requirements (e.g., EU AI Act) and professional standards.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Educational Support and Innovation Units, Academic Governance"
+        },
+        {
+          "action": "Faculty Capacity-Building: Offer professional development workshops and training on the pedagogical use of AI; provide introductory sessions on ethics, data protection, and regulatory frameworks.",
+          "linked_kpis": [
+            "KPI 2"
+          ],
+          "owners": "Professional Development Coordinator, Teaching & Learning Centers"
+        },
+        {
+          "action": "Curriculum Pilots: Identify selected programs or courses to pilot AI literacy modules; encourage faculty to co-design assignments that integrate AI tools alongside ethical discussions.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Program Directors, Teaching Staff"
+        },
+        {
+          "action": "Policy Development: Draft initial institutional guidelines for responsible AI use in teaching, learning, and assessment; address issues such as plagiarism, transparency, and data security.",
+          "linked_kpis": [
+            "KPI 4"
+          ],
+          "owners": "Legal / Compliance Units, Quality Assurance & Accreditation Officers"
+        },
+        {
+          "action": "Knowledge-Sharing Structures: Create cross-departmental communities of practice where faculty can exchange experiences and resources.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Teaching & Learning Centers, Academic Governance"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Systematic Curriculum Integration: Embed AI literacy across all programs, making it part of core competencies rather than optional content; ensure both technical and ethical dimensions are included.",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Academic Governance, Program Directors"
+        },
+        {
+          "action": "Advanced Faculty Development: Move from introductory training to specialized programs (e.g., AI in discipline-specific contexts, instructional design with AI, legal/ethical expertise); encourage faculty to experiment with AI- supported pedagogies.",
+          "linked_kpis": [
+            "KPI 2"
+          ],
+          "owners": "Professional Development Coordinator, Teaching & Learning Centers"
+        },
+        {
+          "action": "Institutional Infrastructure: Provide centralized AI tools and platforms that are secure, GDPR-compliant, and ethically vetted; ensure technical and pedagogical support for faculty and students.",
+          "linked_kpis": [
+            "KPI 3"
+          ],
+          "owners": "CIO / IT Services, Educational Support and Innovation Units"
+        },
+        {
+          "action": "Assessment and Accreditation: Develop competence-based assessment methods that measure both practical and ethical AI literacy; incorporate AI literacy into graduate attributes and accreditation standards.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Quality Assurance & Accreditation Officers, Program Directors"
+        },
+        {
+          "action": "Strategic Partnerships: Collaborate with industry, research institutions, and regulatory bodies to keep curricula aligned with emerging trends.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Academic Governance, External Stakeholders"
+        },
+        {
+          "action": "Culture of Critical Engagement: Promote research, debate, and student projects on AI’s societal implications; foster critical and ethical reasoning about AI.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Teaching Staff, Teaching & Learning Centers"
+        }
+      ],
+      "Enhanced": [     {
+          "action": "Continuous Curriculum Review: Regularly update curricula to reflect advances in AI, regulatory changes, and labor market needs; ensure ongoing alignment with the EU AI Act and professional standards.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Academic Governance, Legal / Compliance Units"
+        },
+        {
+          "action": "Faculty Leadership: Establish faculty “AI champions” in every department to lead innovation and mentor peers.",
+          "linked_kpis": [
+            "KPI 2"
+          ],
+          "owners": "Deans of Faculty, Program Directors"
+        },
+        {
+          "action": "Innovation in Teaching: Scale up AI-enhanced, competence-based, and inclusive teaching and assessment practices across all programs.",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Teaching Staff, Educational Support and Innovation Units"
+        },
+              {
+          "action": "Institutional Benchmarking: Participate in national and international benchmarking of AI literacy curricula and outcomes",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 5"
+          ],
+          "owners": "Quality Assurance & Accreditation Officers, Academic Governance"
+        },
+              {
+          "action": "Deepen Partnerships: Expand partnerships with industry, regulators, and professional associations to co-create curricula and provide real-world learning opportunities.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "External Stakeholders, Career Services & Employability Units"
+        }
+      ]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents key performance indicators (KPIs) for this area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "Percentage of programmes with explicit AI Literacy learning outcomes",
+        "targets": {
+          "Emerging": "≥20%",
+          "Established": "≥60%",
+          "Enhanced": "≥80%"
+        },
+        "owners": "Academic Governance and Program Directors"
+      },
+      {
+        "id": "KPI2",
+        "name": "Percentage of staff who have completed at least one institutionally recognised AI Literacy pedagogy training within the last 2–3 years",
+        "targets": {
+          "Emerging": "≥25%",
+          "Established": "≥60%",
+          "Enhanced": "≥90%"
+        },
+        "owners": "Professional Development Coordinator, Teaching & Learning Centers"
+      },
+      {
+        "id": "KPI3",
+        "name": "Availability of GDPR-compliant AI platforms and tools (% adoption)",
+        "targets": {
+          "Emerging": "≥30%",
+          "Established": "≥50%",
+          "Enhanced": "≥70%"
+        },
+        "owners": "CIO / IT Services"
+      },
+      {
+        "id": "KPI4",
+        "name": "Existence of institutional AI framework and policy (yes/no)",
+        "targets": {
+          "Emerging": "Draft or partial",
+          "Established": "Approved and implemented",
+          "Enhanced": "Regularly reviewed and updated"
+        },
+        "owners": "Educational Support and Innovation Units, Legal / Compliance Units"
+      },
+      {
+        "id": "KPI5",
+        "name": "Number of cross-departmental communities of practice focused on AI",
+        "targets": {
+          "Emerging": "≥1",
+          "Established": "≥3",
+          "Enhanced": "≥5"
+        },
+        "owners": "Teaching & Learning Centers, Academic Governance"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Academic Governance, Legal / Compliance Units": "",
+    "Program directors": "",
+    "Deans of Faculty": "",
+    "Head of Schools": "",
+    "Academic Governance": "",
+    "Program Directors": "",
+    "External Stakeholders": "",
+    "CIO/IT Services": "",
+    "Educational Support": "",
+    "Innovation Units": "",
+    "Legal/Compliance Units": "",
+    "Data Protection Officers (DPOs)": "",
+    "Professional Development Coordinator": "",
+    "Teaching & Learning Centers": "",
+    "Course Leaders": "",
+    "Teaching Staff": "",
+    "Quality Assurance & Accreditation Officers": ""
+  }
+}

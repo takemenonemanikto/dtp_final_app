@@ -1,0 +1,510 @@
+{
+  "area_id": "3.7",
+  "area_name": "Infrastructure",
+  "intro": "3.7 Infrastructure",
+  "overview": "The infrastructure domain encompasses the foundational technical environment necessary to support the responsible, scalable, and inclusive use of artificial intelligence (AI) in higher education. It includes physical and virtual computing resources (e.g. GPUs, servers), networking, cloud services, data storage, AI platforms and software tools, system integration, and long-term maintenance capabilities. This infrastructure supports all core institutional functions—teaching, learning, research, and administration. Its quality and accessibility directly influence the institution’s ability to host, develop, deploy, and sustain AI-driven solutions. Without robust and future-ready infrastructure, most aspects of digital transformation— including data analytics, smart services, or AI-supported teaching—cannot be effectively implemented or scaled. A mature infrastructure environment is a key enabler of institutional innovation, allowing for experimentation while ensuring long-term operational sustainability. This area is also closely aligned with broader European digital transformation priorities, including the Digital Decade targets and the evolving regulatory landscape for AI and data governance. Institutions with a strong infrastructure backbone are better positioned to participate in cross-border initiatives, adopt emerging technologies, and meet future demands for secure and ethical AI integration. EN Page 75 of 118 ALFA Labs 2024-1-FI01-KA220-HED-000248157 trAnsformation pLan KA152, 153, 154 – Learning Mobility of Individuals For Ai Living Labs Final Beneficiary Report",
+  "instructions": {
+    "maturity_scoring": "For each item, select: [0] Not in place | [1] Partially in place | [2] Fully in place, and provide evidence and the responsible owner. Critical items must be fully implemented before moving to a higher maturity level.",
+    "gating_logic": {
+      "critical_items_condition_to_unlock_actions": {
+        "all_critical_items_score_equals": 2
+      },
+      "foundational_actions_condition": {
+        "show_foundational_actions_if_any_critical_item_score_equals": 0
+      },
+      "foundational_actions_are_item_specific": true
+    }
+  },
+  "maturity_matrix": {
+    "items": [
+      {
+        "id": 1,
+        "item": "Availability of AI-ready computing resources (e.g. GPUs, servers, high- performance clusters) Notes: Focus on local/hybrid physical infrastructure",
+        "score_anchors": {
+          "0": "No dedicated AI computing resources; only general-purpose or outdated hardware.",
+          "1": "Some AI- ready resources available in select areas or for pilot use.",
+          "2": "Comprehensive, scalable AI-ready resources available institution-wide."
+        },
+        "evidence_examples": "Inventory of hardware, access logs, purchase records, user feedback",
+        "owners": "Director of IT /Digital Services",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 4"
+        ],
+        "critical": true
+      },
+      {
+        "id": 2,
+        "item": "Secure access to cloud-based AI platforms (for training, experimentation, deployment) Notes: Covers cloud solutions and sandbox environments",
+        "score_anchors": {
+          "0": "No access or only ad hoc/individual cloud use.",
+          "1": "Limited or pilot access to cloud AI platforms; partial security controls.",
+          "2": "Secure, institution-wide access to cloud AI platforms with managed accounts and sandboxing."
+        },
+        "evidence_examples": "Cloud service nagreements,access logs,security audit reports",
+        "owners": "Director of IT / Digital Services, External Providers (Cloud vendors, hosting partners)",
+        "linked_kpis": [
+          "KPI 2",
+          "KPI 3"
+        ],
+        "critical": true
+      },
+      {
+        "id": 3,
+        "item": "Integration of AI tools with institutional systems (e.g. LMS, SIS, research platforms) Notes: Could split LMS/SIS if needed",
+        "score_anchors": {
+          "0": "No integration; AI tools used in isolation.",
+          "1": "Partial or pilot integration with some core systems.",
+          "2": "Full integration of AI tools with all major institutional systems."
+        },
+        "evidence_examples": "Integration documentation, system logs, user surveys",
+        "owners": "Head of IT department/ Digital Services, AI Task Force / Digital Transformation Committee",
+        "linked_kpis": [
+          "KPI 4",
+          "KPI 9"
+        ],
+        "critical": false
+      },
+      {
+        "id": 4,
+        "item": "Existence of a dedicated and sustainable budget for AI/IT infrastructure Notes: Emphasizes long-term planning, not one-off purchases",
+        "score_anchors": {
+          "0": "No dedicated budget; only ad hoc or project- based funding.",
+          "1": "Budget line exists but is limited or unstable.",
+          "2": "Multi-year, sustainable budget with clear ownership and planning."
+        },
+        "evidence_examples": "Budget documents, multi-year plans, finance reports",
+        "owners": "Chief Information Officer (CIO) or secretary/treasury managers",
+        "linked_kpis": [
+          "KPI 6"
+        ],
+        "critical": true
+      },
+      {
+        "id": 5,
+        "item": "IT personnel trained to maintain and support AI- specific systems and AI-specific infrastructure Notes: Ensures human capacity and operational stability",
+        "score_anchors": {
+          "0": "No staff with AI infrastructure skills.",
+          "1": "Some staff trained or upskilling in progress.",
+          "2": "Sufficient, trained staff supporting AI infrastructure institution-wide."
+        },
+        "evidence_examples": "Training records, HR reports, support ticket logs",
+        "owners": "Head of IT department/ Digital Services",
+        "linked_kpis": [
+          "KPI 5"
+        ],
+        "critical": true
+      },
+      {
+        "id": 6,
+        "item": "Inclusive and equitable access to infrastructure (for students and staff) Notes: Focus on accessibility, location, time, bandwidth, etc.",
+        "score_anchors": {
+          "0": "Access is inconsistent, limited by location/time, or not inclusive.",
+          "1": "Partial improvements; some policies or pilots for accessibility.",
+          "2": "Full, equitable access for all users, with policies and monitoring in place."
+        },
+        "evidence_examples": "Access policies, usage analytics, accessibility audits",
+        "owners": "Accessibility and Inclusion Officer, Faculty and Department Heads, Student and Staff Representatives",
+        "linked_kpis": [
+          "KPI 1",
+          "KPI 9"
+        ],
+        "critical": true
+      },
+      {
+        "id": 7,
+        "item": "Data architecture and infrastructure aligned with legal, ethical, and AI-specific requirements Notes: Emphasizes GDPR, data minimization, auditability",
+        "score_anchors": {
+          "0": "No alignment with GDPR, data minimization, or auditability.",
+          "1": "Partial compliance; some controls or pilots in place.",
+          "2": "Full compliance and alignment with legal, ethical, and AI-specific standards."
+        },
+        "evidence_examples": "Compliance reports, audit logs, policy documents",
+        "owners": "IT Security and Data Compliance Officer",
+        "linked_kpis": [
+          "KPI 8"
+        ],
+        "critical": true
+      }
+    ],
+    "score_ranges": [
+      {
+        "score_range": "0–5",
+        "maturity_level": "Emerging",
+        "interpretation": "Basic infrastructure, where it is limited or fragmented, with minimal AI-specific capabilities. Access is inconsistent or ad hoc. Little integration or support."
+      },
+      {
+        "score_range": "6–10",
+        "maturity_level": "Established",
+        "interpretation": "Some AI-ready infrastructure is available, with partial integration and moderate support capacity. Cloud access and training for staff are developing."
+      },
+      {
+        "score_range": "11–14",
+        "maturity_level": "Enhanced",
+        "interpretation": "Infrastructure is comprehensive, scalable, secure, and inclusive. AI systems are fully integrated into core environments and actively maintained by trained staff."
+      }
+    ]
+  },
+  "build_action_plan": {
+    "intro": "Before approaching to higher level of maturity in the infrastructure AI DTP area, the critical items from 3.7.2 need to be fully implemented. For each critical item the necessary action needs to be specified to be performed (see table below). From the list of foundational actions only those will be included in particular XY university case, which are scored less than 2.",
+    "foundational_actions": [
+      {
+        "id": "FA1",
+        "action": "Conduct a comprehensive infrastructure audit and identify gaps in AI-ready computing resources. Ask questions and interview all employees that have anything to do with the IT infrastructure.",
+        "required_if": {
+          "item_id": 1,
+          "score_equals": 0
+        },
+        "owners": "Head of IT department/ Digital Services, AI Task Force / Digital Transformation Committee"
+      },
+      {
+        "id": "FA2",
+        "action": "Establish secure, managed access to cloud-based AI platforms with appropriate security controls. If possible, use your school credentials for log in to ensure high usability and simplicity.",
+        "required_if": {
+          "item_id": 2,
+          "score_equals": 0
+        },
+        "owners": "Head of IT department/ Digital Services, AI Task Force / Digital Transformation Committee"
+      },
+      {
+        "id": "FA3",
+        "action": "Allocate and maintain a dedicated, sustainable budget line for AI/IT infrastructure with multi-year planning. Includes attending the budget meetings and planning sessions at HEI or higher levels.",
+        "required_if": {
+          "item_id": 4,
+          "score_equals": 0
+        },
+        "owners": "Chief Information Officer (CIO)"
+      },
+      {
+        "id": "FA4",
+        "action": "Launch a basic upskilling programme to ensure at least one IT team (or defined group of staff) is trained in operating and supporting AI-specific infrastructure",
+        "required_if": {
+          "item_id": 5,
+          "score_equals": 0
+        },
+        "owners": "Head of IT department / Digital Services"
+      },
+      {
+        "id": "FA5",
+        "action": "Implement and monitor policies to ensure inclusive and equitable access to infrastructure for students and staff aligned with HEI rules, legal and other local and/or global laws/rules.",
+        "required_if": {
+          "item_id": 6,
+          "score_equals": 0
+        },
+        "owners": "Accessibility and Inclusion Officer"
+      },
+      {
+        "id": "FA6",
+        "action": "Align data architecture and infrastructure with legal, ethical, and AI-specific requirements (e.g. GDPR) and other rules defined by your HEI.",
+        "required_if": {
+          "item_id": 7,
+          "score_equals": 0
+        },
+        "owners": "IT Security and Data Compliance Officer"
+      }
+    ],
+    "actions_by_maturity_level": {
+      "Emerging": [
+        {
+          "action": "Conduct a comprehensive infrastructure audit to assess current state, gaps, and risks",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 6"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Identify critical pilot areas (e.g. one faculty or research lab) to deploy foundational AI computing resources",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Start small: pilot GPU- based computing in one department",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 4"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Establish a cross-functional working group (IT + AI stakeholders) to define minimal technical standards for AI-readiness",
+          "linked_kpis": [
+            "KPI 9"
+          ],
+          "owners": "AI Task Force / Digital Transformation Committee"
+        },
+        {
+          "action": "Allocate a dedicated budget line for initial upgrades (e.g. cloud credits, hardware purchases)",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Chief Information Officer (CIO)"
+        },
+        {
+          "action": "Initiate vendor consultations or join consortia to explore scalable, cost-effective infrastructure models",
+          "linked_kpis": [
+            "KPI 6"
+          ],
+          "owners": "Procurement and Finance Units"
+        },
+        {
+          "action": "Establish minimum accessibility standards for digital and physical infrastructure (multi- platform access, assistive technologies, equitable access for students and staff).",
+          "linked_kpis": [
+            "KPI 1"
+          ],
+          "owners": "Accessibility and Inclusion Officer"
+        },
+        {
+          "action": "Define basic data management and privacy requirements for AI use (GDPR compliance, institutional data handling policy, minimum security controls).",
+          "linked_kpis": [
+            "KPI 8"
+          ],
+          "owners": "IT Security & Data Compliance Officer"
+        }
+      ],
+      "Established": [
+        {
+          "action": "Expand access to cloud platforms and AI environments across all departments",
+          "linked_kpis": [
+            "KPI 2",
+            "KPI 3"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Develop an AI integration roadmap to connect tools with core, university-wide systems",
+          "linked_kpis": [
+            "KPI 4",
+            "KPI 9"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Launch a targeted upskilling training programme for IT staff on AI infrastructure",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Design and implement accessibility policies and user onboarding processes",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 9"
+          ],
+          "owners": "Accessibility and Inclusion Officer"
+        },
+        {
+          "action": "Pilot a self-service portal for AI computing, storage, and resource scheduling",
+          "linked_kpis": [
+            "KPI 1",
+            "KPI 2"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Introduce recurring annual budget lines for AI infrastructure upgrades, including cloud credits and maintenance.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 6"
+          ],
+          "owners": "Head of IT department/ Digital Services, Faculty and Department Heads"
+        },
+        {
+          "action": "Implement institution-wide data management guidelines with automated compliance checks and regular security audits.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 8"
+          ],
+          "owners": "IT Security & Data Compliance Officer, AI Task Force / Digital Transformation Committee"
+        }
+      ],
+      "Enhanced": [
+        {
+          "action": "Implement continuous monitoring and predictive maintenance for AI infrastructure components",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 8"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Establish a centralized governance model for AI infrastructure (usage policies, sustainability, security, and reporting)",
+          "linked_kpis": [
+            "KPI 6",
+            "KPI 8"
+          ],
+          "owners": "Chief Information Officer (CIO)"
+        },
+        {
+          "action": "Set up AI innovation hubs or living labs with shared infrastructure for interdisciplinary collaboration",
+          "linked_kpis": [
+            "KPI 10",
+            "KPI 4"
+          ],
+          "owners": "AI Task Force / Digital Transformation Committee"
+        },
+        {
+          "action": "Measure and improve the energy efficiency and environmental impact of infrastructure (green AI)",
+          "linked_kpis": [
+            "KPI 11"
+          ],
+          "owners": "Head of IT department/ Digital Services"
+        },
+        {
+          "action": "Share infrastructure best practices internally and externally, and support other institutions",
+          "linked_kpis": [
+            "KPI 10"
+          ],
+          "owners": "Chief Information Officer (CIO)"
+        },
+        {
+          "action": "Integrate long-term AI infrastructure funding into institutional financial planning, with multi-year commitments and sustainability reporting.",
+          "linked_kpis": [
+            "KPI 3",
+            "KPI 4",
+            "KPI 6",
+            "KPI 7"
+          ],
+          "owners": "CFO / CIO"
+        },
+        {
+          "action": "Establish an advanced AI infrastructure competence center with certified experts who provide training, consultation, and continuous support for faculty and researchers.",
+          "linked_kpis": [
+            "KPI 5"
+          ],
+          "owners": "Director of IT / HR Development"
+        }
+      ]
+    }
+  },
+  "kpis": {
+    "intro": "The following table presents the KPIs used for the infrastructure area and target values required to achieve each maturity level. For each KPI, the corresponding owner should be specified.",
+    "items": [
+      {
+        "id": "KPI1",
+        "name": "Percentage of students and staff with access to AI-ready environments",
+        "targets": {
+          "Emerging": "≥30%",
+          "Established": "≥50%",
+          "Enhanced": "≥70%"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      },
+      {
+        "id": "KPI2",
+        "name": "Number of teaching, research, or administrative use cases (projects) that rely on cloud-based AI services per year",
+        "targets": {
+          "Emerging": "≥2",
+          "Established": "≥10",
+          "Enhanced": "≥25"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      },
+      {
+        "id": "KPI3",
+        "name": "Infrastructure uptime (%) during critical usage periods",
+        "targets": {
+          "Emerging": "≥95%",
+          "Established": "≥98%",
+          "Enhanced": "≥99.5%"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      },
+      {
+        "id": "KPI4",
+        "name": "Number of courses/research projects supported by AI infrastructure",
+        "targets": {
+          "Emerging": "≥5",
+          "Established": "≥20",
+          "Enhanced": "≥50"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      },
+      {
+        "id": "KPI5",
+        "name": "Average response time of IT support for AI systems (hours)",
+        "targets": {
+          "Emerging": "≤48",
+          "Established": "≤24",
+          "Enhanced": "≤8"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      },
+      {
+        "id": "KPI6",
+        "name": "Cost-effectiveness/ ROI of AI infrastructure (annual review completed)",
+        "targets": {
+          "Emerging": "Baseline review",
+          "Established": "ROI improvement plan in place",
+          "Enhanced": "ROI targets met or exceeded"
+        },
+        "owners": "Chief Information Officer (CIO)"
+      },
+      {
+        "id": "KPI7",
+        "name": "Data storage growth rate for AI projects (TB/year)",
+        "targets": {
+          "Emerging": "Baseline measured",
+          "Established": "Monitored and forecasted",
+          "Enhanced": "Optimized and sustainable"
+        },
+        "owners": "Head of IT department/ Digital Services, AI Task Force / Digital Transformation Committee"
+      },
+      {
+        "id": "KPI8",
+        "name": "Number of significant security incidents related to AI infrastructure (per year)",
+        "targets": {
+          "Emerging": "≤3",
+          "Established": "≤1",
+          "Enhanced": "0"
+        },
+        "owners": "IT Security and Data Compliance Officer"
+      },
+      {
+        "id": "KPI9",
+        "name": "User satisfaction with AI infrastructure (survey, %)",
+        "targets": {
+          "Emerging": "≥60%",
+          "Established": "≥75%",
+          "Enhanced": "≥90%"
+        },
+        "owners": "Accessibility and Inclusion Officer, AI Task Force / Digital Transformation Committee"
+      },
+      {
+        "id": "KPI10",
+        "name": "Number of interdisciplinary collaborations enabled by AI infrastructure",
+        "targets": {
+          "Emerging": "≥1",
+          "Established": "≥5",
+          "Enhanced": "≥10"
+        },
+        "owners": "AI Task Force / Digital Transformation Committee, Faculty and Department Heads"
+      },
+      {
+        "id": "KPI11",
+        "name": "Carbon footprint/ energy consumption of AI infrastructure (annual report published)",
+        "targets": {
+          "Emerging": "Baseline report",
+          "Established": "Reduction plan in place",
+          "Enhanced": "Targets met or exceeded"
+        },
+        "owners": "Head of IT department/ Digital Services"
+      }
+    ]
+  },
+  "owners_and_roles": {
+    "Chief Information Officer (CIO)": "Oversees the overall infrastructure strategy and ensures alignment with institutional digital transformation objectives. Responsible for budget planning, long-term sustainability, and strategic vendor engagement.",
+    "Head of IT department/ Digital Services": "Leads the implementation, integration, and operational management of AI infrastructure. Coordinates technical support, procurement, and system reliability. Helps with budgeting.",
+    "AI Task Force / Digital Transformation Committee": "Provides strategic guidance, defines priorities, and validates the infrastructure roadmap. Ensures alignment with user needs across teaching, research, and administration.",
+    "Faculty and Department Heads": "Identify infrastructure needs for teaching and research. Act as liaisons between academic users and technical teams. Provide feedback on system effectiveness. Manage budgets.",
+    "Procurement and Finance Units": "Manage infrastructure-related purchases, licensing, and vendor contracts. Ensure value for money, regulatory compliance, and transparent reporting.",
+    "External Providers (e.g. Cloud Vendors, Hosting Partners)": "Deliver technical platforms and services. Ensure SLA adherence, security compliance, and service continuity. Collaborate on integration and support.",
+    "IT Security and Data Compliance Officer": "Ensures AI infrastructure meets cybersecurity, data protection, and ethical compliance requirements. Coordinates risk assessments and incident response.",
+    "Accessibility and Inclusion Officer (if applicable)": "Ensures infrastructure accommodates the needs of users with disabilities or other accessibility requirements. Advises on inclusive design and access policies.",
+    "Student and Staff Representatives": "Provide user feedback, help identify usability issues, and support co-creation of infrastructure policies or usage guidelines."
+  }
+}
