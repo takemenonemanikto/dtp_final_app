@@ -1305,7 +1305,7 @@ def render_summary():
     # ------------------------
     # Critical gaps sections
     # ------------------------
-    st.subheader("Critical gaps to address")
+    st.subheader("Critical items to address")
     st.caption("Shows only **blocking** critical items (score = 0) in started areas.")
     blockers_for_view = [x for x in critical_blockers if x[0] in set(df_view["Area"])]
     if not blockers_for_view:
