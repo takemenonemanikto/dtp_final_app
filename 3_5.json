@@ -4,7 +4,7 @@
   "intro": "3.5 I supported Assessment Practices",
   "overview": "The assessment area covers the entire portfolio of activities through which we assess students’ knowledge and skills – from quick quizzes to extensive written exams and project assignments to peer review – and how AI can support, streamline, or enrich these processes. The aim is not only to measure knowledge, but also to provide valuable feedback to support further development. AI can bring automation to this process, ensure consistency of assessments, and at the same time, enable more personalized communication with students.",
   "instructions": {
-    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical need to be implemented before approaching a higher maturity level (necessary/minimum conditions)."
+    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place, providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical (with red dot) need to be implemented before approaching to higher maturity level (necessary/minimum conditions)."
   },
   "maturity_matrix": {
     "items": [

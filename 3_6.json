@@ -4,7 +4,7 @@
   "intro": "3.6 Collaboration and Networking",
   "overview": "The collaboration and networking area covers how institutions form partnerships and alliances to support digitalisation and AI adoption. It includes structured cooperation with other universities, engagement with industry and public bodies, and participation in European and international consortia. Effective networking provides access to shared resources, joint curricula, and professional development opportunities, while also ensuring that new technologies are integrated inclusively across sectors. Collaboration is both a strategic tool and a cultural practice, reducing duplication and embedding innovation within a broader ecosystem.",
   "instructions": {
-    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical need to be implemented before approaching to higher maturity level (necessary/minimum conditions)."
+    "maturity_scoring": "For each item/statement in the following table, select: [0] Not in place | [1] Partially in place | [2] Fully in place, providing also clear evidence for the suggested score and owner responsible for this item. Examples for evidence and owner are provided within the table below. Note that items which are marked as Critical (with red dot) need to be implemented before approaching to higher maturity level (necessary/minimum conditions)."
   },
   "maturity_matrix": {
     "items": [
