@@ -351,7 +351,7 @@
     ]
   },
   "owners_and_roles": {
-    "Academic Governance, Legal / Compliance Units": "",
+    "Academic Governance, Legal / Compliance Units": "Institutional or faculty bodies overseeing curriculum design and programme development.",
     "Program directors": "",
     "Deans of Faculty": "",
     "Head of Schools": "",
@@ -359,12 +359,12 @@
     "Program Directors": "",
     "External Stakeholders": "",
     "CIO/IT Services": "",
-    "Educational Support": "",
-    "Innovation Units": "",
-    "Legal/Compliance Units": "",
-    "Data Protection Officers (DPOs)": "",
+    "Educational Support": "Pedagogical innovation and faculty support department.",
+    "Innovation Units": "Pedagogical innovation and faculty support department.",
+    "Legal/Compliance Units": "Legal services and compliance authority.",
+    "Data Protection Officers (DPOs)": "Institutional authority for GDPR and privacy compliance.",
     "Professional Development Coordinator": "",
-    "Teaching & Learning Centers": "",
+    "Teaching & Learning Centers": "Institutional unit for teaching innovation and pedagogy.",
     "Course Leaders": "",
     "Teaching Staff": "",
     "Quality Assurance & Accreditation Officers": ""

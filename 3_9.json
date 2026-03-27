@@ -428,13 +428,13 @@
     ]
   },
   "owners_and_roles": {
-    "AI Ethics or Governance Committee": "",
+    "AI Ethics or Governance Committee": "Multidisciplinary committee ensuring ethical, transparent, and compliant AI deployment.",
     "HR/Faculty/Department Heads": "",
-    "Chief Information Security Officer CISO": "",
-    "DPO": "",
+    "Chief Information Security Officer CISO": "Senior officer responsible for cybersecurity and AI-related risk management.",
+    "Data protection officer - DPO": "Institutional authority for GDPR and privacy compliance.",
     "Legal Department": "",
     "Director of IT": "",
-    "Procurement": "",
+    "Procurement": "Unit overseeing institutional purchasing processes.",
     "Department Heads": "",
     "HR": "",
     "Rector": "",
