@@ -661,7 +661,7 @@ def render_area_from_json(area_code: str):
 
     # Owner glossary
     if owners_roles:
-        with st.expander("👥 Role Descriptions (KPI Owners)"):
+        with st.expander("👥 Roles Overview (KPI Owners)"):
             for role, desc in owners_roles.items():
                 st.markdown(f"**{role}** — {desc}")
 
