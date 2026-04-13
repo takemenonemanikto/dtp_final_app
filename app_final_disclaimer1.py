@@ -1388,7 +1388,7 @@ def render_summary():
     # ------------------------
     # Save / Load (versioned JSON)
     # ------------------------
-    st.subheader("Save or Load Assesment")
+    st.subheader("Exports and Imports - Save or Load Assesment")
     with st.expander("Save / Load assessment", expanded=False):
         current_state = st.session_state.get("areas_state", {})
         safe_state = make_areas_state_json_safe(current_state)
@@ -1481,7 +1481,8 @@ def render_summary():
     # ------------------------
     # Exports
     # ------------------------
-    st.subheader("Exports and Imports")
+    st.markdown("---") 
+    st.subheader("Reporting - PDF report and Summary table")
 
     try:
         configs = {}
@@ -1505,9 +1506,9 @@ def render_summary():
         )
         label = "Download PDF report" if total_blockers == 0 else "Download PDF report (issues detected)"
         st.download_button(label, data=pdf_bytes, file_name="dtp_ai_maturity_report.pdf", mime="application/pdf")
+        st.caption("Note: This PDF report containts all areas that have been filled out, together with actions for advancing to the next level or foundational actions.")
     except Exception as e:
-        st.warning(f"PDF export is currently unavailable: {e}")
-
+        st.warning(f"PDF export is currently unavailable: {e}") 
     csv_buf = io.StringIO()
     df_show.to_csv(csv_buf, index=False)
     st.download_button(
@@ -1516,6 +1517,7 @@ def render_summary():
         file_name="dtp_summary.csv",
         mime="text/csv",
     )
+    st.caption("Note: This CSV report containts all areas that have been filled out in .CSV format. Great for quick statistical insights.")
 
 def render_placeholder(area_label: str):
     st.title(area_label)
